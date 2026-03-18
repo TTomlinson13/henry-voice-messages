@@ -18,7 +18,7 @@
 - [ ] Optional visual dashboard (`ops/dashboard.html`)
 
 ## BLOCKED
-- [ ] Kiro build blocked on definition details
+- [ ] (none currently)
 
 ## KIRO DRAFT SPEC (v0.1 — 2026-03-18)
 - **Purpose:** Kiro is the execution coordinator for insurance ops follow-through (inbox-to-action), turning priority signals into concrete next actions with owner + status.
@@ -28,8 +28,8 @@
 - **Done when:** (1) daily top-3 priorities posted, (2) each priority has owner/next action/date, (3) stale tasks cleaned weekly, (4) urgent inbox items converted to tracked actions same day.
 
 ## KIRO IMPLEMENTATION CHECKLIST (v0.2)
-- [ ] Finalize Kiro scope statement (one paragraph) and approve owner.
-- [ ] Create Kiro run mode: main-session triage + optional sub-agent execution lane.
+- [x] Finalize Kiro scope statement (one paragraph) and approve owner. ✅ Owner: Henry (approved by Todd 2026-03-18)
+- [x] Create Kiro run mode: main-session triage + optional sub-agent execution lane. ✅ Active mode: main triage + optional execution lane
 - [ ] Define trigger rules (priority inbox hits, stale project cards, daily snapshot windows).
 - [ ] Define output format standard: `priority -> owner -> next action -> due/date -> status`.
 - [ ] Add daily Kiro update block to Mission Control routine.
