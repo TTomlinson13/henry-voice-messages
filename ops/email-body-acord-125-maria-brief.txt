@@ -1,0 +1,27 @@
+Hi Maria,
+
+For tomorrow morning (after 9 AM), here is the ACORD 125 kickoff plan for the Commercial Intake-to-ACORD project.
+
+Priority objective:
+Launch ACORD 125 prototype with a controlled 10-submission pilot.
+
+What we need to finalize first:
+1) Required vs optional field list (Quote-Ready minimums)
+2) Quote-Ready gate rules (what blocks progression)
+3) Pilot cohort (first 10 submissions)
+
+Proposed pilot execution steps:
+1. Confirm required field dictionary
+2. Approve first 10 pilot files
+3. Run validation + mapping (v0.1)
+4. Route exceptions for review
+5. Score pilot on completeness, confidence, and correction time
+
+Deliverables prepared:
+- ACORD 125 Kickoff Packet (v1)
+- Kiro execution wrapper alignment for daily accountability
+
+If this works for you, we can run the kickoff immediately after you’re in.
+
+Thanks,
+Todd + Henry

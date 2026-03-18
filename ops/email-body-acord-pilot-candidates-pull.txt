@@ -1,0 +1,12 @@
+Hi Todd and Maria,
+
+Attached is the ACORD 125 pilot candidate pull (10 records) from CD.
+
+I intentionally included a mix of:
+- cleaner records,
+- missing-field records,
+- and data-quality edge cases,
+so we can validate mapping and exception handling in the first pilot pass.
+
+Thanks,
+Henry

@@ -1,0 +1,591 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 4 0 R 6 0 R 8 0 R 10 0 R 12 0 R 14 0 R ] /Count 6 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1795 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(PRD — Insurify-Style MVP) Tj
+T*
+(========================) Tj
+T*
+() Tj
+T*
+(PRD — Insurance Quote Marketplace MVP \(Insurify-Style\)) Tj
+T*
+() Tj
+T*
+(#1\) Product Summary) Tj
+T*
+(Build a fast, conversion-focused insurance quote marketplace MVP that captures inbound consumer) Tj
+T*
+(quote requests, routes leads to internal agents based on rules, and tracks funnel + SLA) Tj
+T*
+(performance.) Tj
+T*
+() Tj
+T*
+(#2\) Goals) Tj
+T*
+(- Launch in 30 days with FL-first scope.) Tj
+T*
+(- Minimize quote-request friction.) Tj
+T*
+(- Route leads automatically with clear ownership.) Tj
+T*
+(- Measure speed-to-contact and conversion performance.) Tj
+T*
+() Tj
+T*
+(#3\) Non-Goals \(MVP\)) Tj
+T*
+(- Full national rollout.) Tj
+T*
+(- Deep carrier API quoting integrations.) Tj
+T*
+(- Advanced pricing engine.) Tj
+T*
+(- Complex call-center tooling.) Tj
+T*
+() Tj
+T*
+(#4\) MVP Scope) Tj
+T*
+(- Product lines: Auto + Home \(initial\)) Tj
+T*
+(- Geography: FL \(expandable\)) Tj
+T*
+(- Public pages:) Tj
+T*
+(  - Homepage) Tj
+T*
+(  - Auto page) Tj
+T*
+(  - Home page) Tj
+T*
+(  - Multi-step quote form) Tj
+T*
+(  - Thank-you page) Tj
+T*
+(- Internal pages:) Tj
+T*
+(  - Login) Tj
+T*
+(  - Lead dashboard) Tj
+T*
+(  - Routing rules manager) Tj
+T*
+(  - SLA alerts view) Tj
+T*
+() Tj
+T*
+(#5\) Users & Roles) Tj
+T*
+(- Consumer: submits quote request.) Tj
+T*
+(- Producer: receives/works assigned leads.) Tj
+T*
+(- CSR: supports service/follow-up.) Tj
+T*
+(- Admin/Ops: manages rules, users, monitoring.) Tj
+T*
+() Tj
+T*
+(#6\) User Stories) Tj
+T*
+(1. As a consumer, I can submit quote details in under 3 minutes.) Tj
+T*
+(2. As Ops, I can auto-route leads by state/product.) Tj
+T*
+(3. As a producer, I can see new leads and contact status.) Tj
+T*
+(4. As admin, I can detect untouched leads beyond SLA.) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1505 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(5. As leadership, I can see funnel metrics by source.) Tj
+T*
+() Tj
+T*
+(#7\) Functional Requirements) Tj
+T*
+(##7.1 Public Funnel) Tj
+T*
+(- Multi-step form with validation) Tj
+T*
+(- Required fields:) Tj
+T*
+(  - name, phone, email, zip/state, product type) Tj
+T*
+(- Optional fields based on product path) Tj
+T*
+(- Progress indicator + save partial \(optional if fast\)) Tj
+T*
+() Tj
+T*
+(##7.2 Lead Intake API) Tj
+T*
+(- POST /api/leads) Tj
+T*
+(- Validate + normalize phone/email) Tj
+T*
+(- Store UTM/source fields) Tj
+T*
+(- De-dupe window \(configurable\)) Tj
+T*
+() Tj
+T*
+(##7.3 Routing Engine) Tj
+T*
+(- Rule dimensions:) Tj
+T*
+(  - state) Tj
+T*
+(  - product type) Tj
+T*
+(  - priority/order) Tj
+T*
+(- Assign lead to owner and record assignment reason) Tj
+T*
+() Tj
+T*
+(##7.4 Notifications) Tj
+T*
+(- On assignment:) Tj
+T*
+(  - email to assignee) Tj
+T*
+(  - optional SMS alert) Tj
+T*
+(- On SLA breach:) Tj
+T*
+(  - escalate to ops/admin) Tj
+T*
+() Tj
+T*
+(##7.5 Admin Dashboard) Tj
+T*
+(- Lead list + filters \(new/assigned/contacted/closed\)) Tj
+T*
+(- Detail pane with timeline/events) Tj
+T*
+(- Routing rules CRUD) Tj
+T*
+(- Users/roles management) Tj
+T*
+(- Export CSV) Tj
+T*
+() Tj
+T*
+(##7.6 Metrics) Tj
+T*
+(- Lead response time) Tj
+T*
+(- Quote-start to completion rate) Tj
+T*
+(- Conversion by source) Tj
+T*
+(- Volume by state/product) Tj
+T*
+() Tj
+T*
+(#8\) Data Model \(Core\)) Tj
+T*
+(##leads) Tj
+T*
+(- id \(uuid\)) Tj
+T*
+(- created_at, updated_at) Tj
+T*
+(- full_name, email, phone) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 1313 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(- state, zip) Tj
+T*
+(- product_type) Tj
+T*
+(- status \(new/assigned/contacted/qualified/closed/lost\)) Tj
+T*
+(- assigned_user_id) Tj
+T*
+(- source, utm_source, utm_medium, utm_campaign, utm_content, utm_term) Tj
+T*
+(- payload_json) Tj
+T*
+() Tj
+T*
+(##lead_events) Tj
+T*
+(- id, lead_id) Tj
+T*
+(- event_type) Tj
+T*
+(- actor_type \(system/user\)) Tj
+T*
+(- actor_id) Tj
+T*
+(- metadata_json) Tj
+T*
+(- created_at) Tj
+T*
+() Tj
+T*
+(##routing_rules) Tj
+T*
+(- id) Tj
+T*
+(- active) Tj
+T*
+(- state) Tj
+T*
+(- product_type) Tj
+T*
+(- assignee_user_id) Tj
+T*
+(- priority) Tj
+T*
+(- notes) Tj
+T*
+() Tj
+T*
+(##users) Tj
+T*
+(- id) Tj
+T*
+(- role \(admin/producer/csr/ops\)) Tj
+T*
+(- name) Tj
+T*
+(- email) Tj
+T*
+(- phone) Tj
+T*
+(- active) Tj
+T*
+() Tj
+T*
+(#9\) Tech Stack) Tj
+T*
+(- Frontend: Next.js + Tailwind) Tj
+T*
+(- Backend: Next API routes \(or NestJS\), Node) Tj
+T*
+(- DB: PostgreSQL + Prisma) Tj
+T*
+(- Auth: Clerk or Supabase Auth) Tj
+T*
+(- Email: Resend/SendGrid) Tj
+T*
+(- SMS: Twilio \(or defer\)) Tj
+T*
+(- Analytics: GA4 + PostHog) Tj
+T*
+(- Hosting: Vercel \(frontend/api\), managed Postgres) Tj
+T*
+() Tj
+T*
+(#10\) API Endpoints \(MVP\)) Tj
+T*
+(- POST /api/leads) Tj
+T*
+(- GET /api/leads) Tj
+T*
+(- GET /api/leads/:id) Tj
+T*
+(- PATCH /api/leads/:id) Tj
+T*
+(- GET/POST/PATCH /api/routing-rules) Tj
+ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 11 0 R >>
+endobj
+11 0 obj
+<< /Length 1868 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(- GET/POST/PATCH /api/users) Tj
+T*
+(- GET /api/metrics/summary) Tj
+T*
+() Tj
+T*
+(#11\) SLA Rules) Tj
+T*
+(- New lead must be touched within X minutes \(default 15\)) Tj
+T*
+(- Breach triggers alert to ops + admin) Tj
+T*
+() Tj
+T*
+(#12\) Acceptance Criteria) Tj
+T*
+(- Consumer can complete form and submit successfully) Tj
+T*
+(- Lead is auto-assigned by rule) Tj
+T*
+(- Assignee receives notification) Tj
+T*
+(- Lead appears in dashboard immediately) Tj
+T*
+(- SLA breach alert fires correctly) Tj
+T*
+(- Metrics page shows daily counts and response times) Tj
+T*
+() Tj
+T*
+(#13\) QA Checklist) Tj
+T*
+(- Form validation paths) Tj
+T*
+(- Mobile responsiveness) Tj
+T*
+(- Duplicate lead handling) Tj
+T*
+(- Rule precedence correctness) Tj
+T*
+(- Notification delivery success/failure) Tj
+T*
+(- Role access restrictions) Tj
+T*
+() Tj
+T*
+(#14\) Launch Plan \(30 Days\)) Tj
+T*
+(- Week 1: IA/UI + DB schema + form scaffolding) Tj
+T*
+(- Week 2: intake API + routing + notification) Tj
+T*
+(- Week 3: dashboard + rules + SLA alerts) Tj
+T*
+(- Week 4: analytics + QA + FL pilot launch) Tj
+T*
+() Tj
+T*
+(#15\) Post-MVP Backlog) Tj
+T*
+(- Carrier API integrations) Tj
+T*
+(- Multi-state rollout tooling) Tj
+T*
+(- Advanced lead scoring) Tj
+T*
+(- Agent performance scoring) Tj
+T*
+(- Call automation \(8x8 integration\)) Tj
+T*
+() Tj
+T*
+(-----------------------------------------------------------------------------------------------) Tj
+T*
+() Tj
+T*
+(Manus Prompt — Insurify-Style MVP) Tj
+T*
+(=================================) Tj
+T*
+() Tj
+T*
+(You are Manus, acting as a senior product+engineering execution agent.) Tj
+T*
+() Tj
+T*
+(Project Name: Insurance Quote Marketplace MVP \(Insurify-style\)) Tj
+T*
+(Owner: Todd Tomlinson \(Tomlinson & Co\)) Tj
+T*
+(Primary Goal: Launch a fast quote marketplace MVP in 30 days for FL-first operations.) Tj
+T*
+() Tj
+T*
+(Context:) Tj
+ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 13 0 R >>
+endobj
+13 0 obj
+<< /Length 2065 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(- Keep this project separate from glossaryofinsurance.com and tcpolicy.com.) Tj
+T*
+(- Focus on conversion speed, lead routing, and SLA discipline.) Tj
+T*
+() Tj
+T*
+(Deliver in this run:) Tj
+T*
+(1\) Architecture proposal \(frontend/backend/db/auth/analytics\)) Tj
+T*
+(2\) Build-ready implementation plan \(week-by-week\)) Tj
+T*
+(3\) Data model/schema) Tj
+T*
+(4\) API contract draft) Tj
+T*
+(5\) UX wireframe outline for funnel + dashboard) Tj
+T*
+(6\) QA test plan) Tj
+T*
+(7\) Launch checklist) Tj
+T*
+(8\) Risk register + mitigations) Tj
+T*
+() Tj
+T*
+(Technical requirements:) Tj
+T*
+(- Frontend: Next.js + Tailwind) Tj
+T*
+(- Backend: Node \(Next API or Nest\)) Tj
+T*
+(- DB: PostgreSQL + Prisma) Tj
+T*
+(- Auth: Clerk or Supabase Auth) Tj
+T*
+(- Email notifications: Resend/SendGrid) Tj
+T*
+(- Analytics: GA4 + PostHog) Tj
+T*
+(- Hosting: Vercel + managed Postgres) Tj
+T*
+() Tj
+T*
+(MVP scope requirements:) Tj
+T*
+(- Public pages: homepage, product pages \(auto/home\), multi-step quote form, thank-you page) Tj
+T*
+(- Internal pages: login, lead dashboard, routing rules manager, SLA alerts view) Tj
+T*
+(- Lead routing by state + product type) Tj
+T*
+(- Notifications on lead assignment) Tj
+T*
+(- SLA alert if untouched > 15 minutes \(configurable\)) Tj
+T*
+() Tj
+T*
+(Required lead fields:) Tj
+T*
+(- name, email, phone, zip/state, product_type) Tj
+T*
+(- source + UTM fields) Tj
+T*
+() Tj
+T*
+(Output format \(strict\):) Tj
+T*
+(A\) Executive summary \(10 bullets max\)) Tj
+T*
+(B\) System architecture diagram \(text/ascii acceptable\)) Tj
+T*
+(C\) Database schema \(tables + fields\)) Tj
+T*
+(D\) API endpoints and request/response examples) Tj
+T*
+(E\) UI page list + component list) Tj
+T*
+(F\) 30-day plan with day-by-day milestones) Tj
+T*
+(G\) QA test matrix) Tj
+T*
+(H\) Launch readiness checklist) Tj
+T*
+(I\) Top 10 risks + mitigation actions) Tj
+T*
+(J\) Exact next 10 tasks to start tomorrow) Tj
+T*
+() Tj
+T*
+(Tone:) Tj
+T*
+(- Practical, implementation-oriented, no fluff.) Tj
+T*
+(- Assume this will be handed directly to engineering for build.) Tj
+ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 15 0 R >>
+endobj
+15 0 obj
+<< /Length 150 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+() Tj
+T*
+(-----------------------------------------------------------------------------------------------) Tj
+T*
+() Tj
+ET
+endstream
+endobj
+xref
+0 16
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000150 00000 n 
+0000000220 00000 n 
+0000000346 00000 n 
+0000002193 00000 n 
+0000002319 00000 n 
+0000003876 00000 n 
+0000004002 00000 n 
+0000005367 00000 n 
+0000005495 00000 n 
+0000007416 00000 n 
+0000007544 00000 n 
+0000009662 00000 n 
+0000009790 00000 n 
+trailer
+<< /Size 16 /Root 1 0 R >>
+startxref
+9992
+%%EOF

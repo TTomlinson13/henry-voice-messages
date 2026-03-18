@@ -1,0 +1,445 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 4 0 R 6 0 R 8 0 R 10 0 R ] /Count 4 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1717 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(Commercial Lead Blueprint \(30-Day Pilot\)) Tj
+T*
+() Tj
+T*
+(#Objective) Tj
+T*
+(Build a repeatable commercial lead-generation engine that prioritizes quality over volume, pre-) Tj
+T*
+(qualifies leads with AI, and routes producer time to high-probability opportunities.) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#1\) How Commercial Differs \(Operating Assumptions\)) Tj
+T*
+(- Longer sales cycle) Tj
+T*
+(- More underwriting/intake data required) Tj
+T*
+(- Higher premium per win, lower lead volume) Tj
+T*
+(- More stakeholders in the buying process) Tj
+T*
+(- Trust + niche expertise matter more than speed alone) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#2\) Niche-First Strategy \(Start with 3 Verticals\)) Tj
+T*
+(Pick 3 verticals to pilot first \(example\):) Tj
+T*
+(1. Contractors) Tj
+T*
+(2. Habitational / Property Owners) Tj
+T*
+(3. Restaurants / Hospitality) Tj
+T*
+() Tj
+T*
+(##Vertical Selection Criteria) Tj
+T*
+(- Existing carrier appetite strength) Tj
+T*
+(- Team expertise/confidence) Tj
+T*
+(- Average premium size) Tj
+T*
+(- Win-rate potential) Tj
+T*
+(- Referral density in your network) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#3\) Commercial Offer Stack \(Lead Magnets\)) Tj
+T*
+(Use consultative offers, not generic “get a quote” only.) Tj
+T*
+() Tj
+T*
+(1. Free Coverage Gap Review) Tj
+T*
+(2. 15-Minute Risk Snapshot) Tj
+T*
+(3. Renewal Readiness Check \(60 days before renewal\)) Tj
+T*
+(4. COI/contract compliance quick check \(for contractors\)) Tj
+T*
+(5. Mod + payroll sanity check \(where applicable\)) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#4\) Channel Mix) Tj
+T*
+() Tj
+T*
+(##A\) Partner Channels \(Primary\)) Tj
+T*
+(- Commercial lenders / loan officers) Tj
+T*
+(- CPAs / bookkeepers) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1601 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(- Business attorneys) Tj
+T*
+(- Trade associations) Tj
+T*
+(- Commercial real estate / property managers) Tj
+T*
+() Tj
+T*
+(##B\) Outbound Data Channels) Tj
+T*
+(- Expired commercial leads) Tj
+T*
+(- Local business databases by SIC/NAICS) Tj
+T*
+(- Secretary of State new business filings \(where practical\)) Tj
+T*
+() Tj
+T*
+(##C\) Inbound Digital) Tj
+T*
+(- Niche landing pages by vertical) Tj
+T*
+(- Search + retargeting) Tj
+T*
+(- Educational content \(checklists by vertical\)) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#5\) AI Agent Model \(Commercial\)) Tj
+T*
+() Tj
+T*
+(##1. Commercial Intake Agent) Tj
+T*
+(- Collects required underwriting fields) Tj
+T*
+(- Classifies lead by vertical and complexity) Tj
+T*
+(- Flags missing docs) Tj
+T*
+() Tj
+T*
+(##2. Follow-Up Agent \(Non-annoying cadence\)) Tj
+T*
+(- Nudges for missing docs/data) Tj
+T*
+(- Stops on no-fit/opt-out) Tj
+T*
+(- Escalates engaged leads to producer) Tj
+T*
+() Tj
+T*
+(##3. Compliance Guardrail Agent) Tj
+T*
+(- Channel permissions + quiet hours + consent) Tj
+T*
+(- Audit trail for every touchpoint) Tj
+T*
+() Tj
+T*
+(##4. Producer Prep Agent) Tj
+T*
+(- Builds one-page account brief before producer call) Tj
+T*
+(- Includes risk highlights + likely carrier path) Tj
+T*
+() Tj
+T*
+(##5. Pipeline Coach Agent) Tj
+T*
+(- Daily stuck-deal report) Tj
+T*
+(- Next best action recommendations) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#6\) Commercial “Quote-Ready” Minimum Data) Tj
+T*
+(- Legal business name + DBA) Tj
+T*
+(- Business address\(es\)) Tj
+T*
+(- Contact name + role) Tj
+T*
+(- Email + mobile) Tj
+T*
+(- Years in business) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 1630 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(- NAICS/SIC or operations description) Tj
+T*
+(- Estimated annual revenue) Tj
+T*
+(- Estimated payroll) Tj
+T*
+(- Current carrier + premium \(if known\)) Tj
+T*
+(- Loss history status \(available/pending\)) Tj
+T*
+(- Effective date / renewal date) Tj
+T*
+() Tj
+T*
+(Optional by class:) Tj
+T*
+(- Fleet details) Tj
+T*
+(- Subcontractor usage) Tj
+T*
+(- Property characteristics) Tj
+T*
+(- Employee count by class) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#7\) 30-Day Pilot Execution Plan) Tj
+T*
+() Tj
+T*
+(##Week 1: Foundation) Tj
+T*
+(- Select 3 niches) Tj
+T*
+(- Build intake form per niche) Tj
+T*
+(- Create partner list \(top 50\)) Tj
+T*
+(- Define SLA and status stages) Tj
+T*
+() Tj
+T*
+(##Week 2: Launch Partner Outreach) Tj
+T*
+(- Outreach to 50 partners \(segmented\)) Tj
+T*
+(- Book 10+ intros) Tj
+T*
+(- Deploy partner-specific intake links) Tj
+T*
+(- Start weekly partner cadence) Tj
+T*
+() Tj
+T*
+(##Week 3: Activate Digital + Reactivation) Tj
+T*
+(- Launch niche ads/landing pages) Tj
+T*
+(- Start expired lead reactivation sequence) Tj
+T*
+(- Monitor data completeness + response rates) Tj
+T*
+() Tj
+T*
+(##Week 4: Optimize & Scale) Tj
+T*
+(- Double down on best niche/channel) Tj
+T*
+(- Remove low-quality sources) Tj
+T*
+(- Improve scripts and objections handling) Tj
+T*
+(- Publish weekly scorecard and expansion plan) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#8\) Commercial Follow-Up Cadence \(Default\)) Tj
+T*
+(- Day 0: Intro + value offer + intake link) Tj
+T*
+(- Day 2: Missing-data follow-up) Tj
+T*
+(- Day 5: Case-example/value message) Tj
+T*
+(- Day 10: Renewal/risk prompt) Tj
+T*
+(- Day 14: Final soft close-out) Tj
+ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 11 0 R >>
+endobj
+11 0 obj
+<< /Length 1356 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+() Tj
+T*
+(Rules:) Tj
+T*
+(- Stop on opt-out) Tj
+T*
+(- Pause on engagement) Tj
+T*
+(- Route hot leads to producer immediately) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#9\) KPI Scorecard \(Weekly\)) Tj
+T*
+(- Leads by niche and source) Tj
+T*
+(- Contact rate) Tj
+T*
+(- Data-complete rate) Tj
+T*
+(- Quote-ready rate) Tj
+T*
+(- Lead-to-producer-call time) Tj
+T*
+(- Proposal rate) Tj
+T*
+(- Bind rate) Tj
+T*
+(- Avg premium won) Tj
+T*
+(- Revenue per source) Tj
+T*
+(- Unsubscribe/opt-out rate) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#10\) 10 Immediate Actions) Tj
+T*
+(1. Pick top 3 commercial niches) Tj
+T*
+(2. Build intake checklists per niche) Tj
+T*
+(3. Create partner outreach scripts by role) Tj
+T*
+(4. Generate partner tracking links \(UTM\)) Tj
+T*
+(5. Activate compliance suppression checks) Tj
+T*
+(6. Launch first 20 partner outreaches) Tj
+T*
+(7. Import expired commercial segment for reactivation) Tj
+T*
+(8. Set daily 15-min commercial pipeline standup) Tj
+T*
+(9. Route quote-ready leads to producer queue) Tj
+T*
+(10. Publish first weekly scorecard) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Suggested Pilot Constraints) Tj
+T*
+(- Start with one geography cluster and 3 niches) Tj
+T*
+(- Keep outbound volume controlled until compliance and conversion metrics are stable) Tj
+T*
+(- Prioritize quality conversations over raw contact count) Tj
+ET
+endstream
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000136 00000 n 
+0000000206 00000 n 
+0000000332 00000 n 
+0000002101 00000 n 
+0000002227 00000 n 
+0000003880 00000 n 
+0000004006 00000 n 
+0000005688 00000 n 
+0000005816 00000 n 
+trailer
+<< /Size 12 /Root 1 0 R >>
+startxref
+7225
+%%EOF

@@ -1,0 +1,331 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 4 0 R 6 0 R 8 0 R ] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1547 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(HOInsurance + FloridaAuto Website Overhaul Blueprint \(v1\)) Tj
+T*
+() Tj
+T*
+(Objective) Tj
+T*
+(Rebuild `hoinsurance.com` and `floridauto.com` into modern, high-conversion lead engines with) Tj
+T*
+(shared backend operations and distinct brand positioning.) Tj
+T*
+() Tj
+T*
+(Strategy) Tj
+T*
+(- Keep brand-specific front ends \(separate domains, messaging, audience hooks\)) Tj
+T*
+(- Use one standardized intake/data pipeline behind both sites) Tj
+T*
+(- Optimize for quote starts, contact quality, and speed-to-follow-up) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(1\) Site Roles) Tj
+T*
+() Tj
+T*
+(hoinsurance.com) Tj
+T*
+(Primary role: homeowners/flood-forward acquisition site) Tj
+T*
+() Tj
+T*
+(Positioning:) Tj
+T*
+(- Florida homeowners insurance guidance + fast quote path) Tj
+T*
+(- Coverage clarity and confidence-first messaging) Tj
+T*
+() Tj
+T*
+(floridauto.com) Tj
+T*
+(Primary role: auto-focused acquisition site) Tj
+T*
+() Tj
+T*
+(Positioning:) Tj
+T*
+(- Fast compare flow for Florida drivers) Tj
+T*
+(- savings + service clarity \(without overpromising\)) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(2\) Required v1 Page Map \(both sites\)) Tj
+T*
+(1. Home) Tj
+T*
+(2. Get a Quote \(primary conversion page\)) Tj
+T*
+(3. Coverage pages \(Home/Auto/Flood depending on domain\)) Tj
+T*
+(4. About / Why Us) Tj
+T*
+(5. Contact) Tj
+T*
+(6. Privacy + Disclosures) Tj
+T*
+() Tj
+T*
+(Optional v1.1:) Tj
+T*
+(- FAQ) Tj
+T*
+(- Reviews/Testimonials) Tj
+T*
+(- Resources/Blog) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(3\) Conversion Architecture) Tj
+T*
+() Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1426 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(Hero Section Formula) Tj
+T*
+(- Clear promise) Tj
+T*
+(- Short subhead) Tj
+T*
+(- Single primary CTA) Tj
+T*
+(- trust marker row \(years in business, local team, multi-carrier\)) Tj
+T*
+() Tj
+T*
+(CTA Stack) Tj
+T*
+(- Primary: Start Quote) Tj
+T*
+(- Secondary: Call Now) Tj
+T*
+(- Tertiary: Text Us) Tj
+T*
+() Tj
+T*
+(Form Rules) Tj
+T*
+(- Keep above-the-fold form short \(step 1\)) Tj
+T*
+(- Progressive profiling for non-essential fields) Tj
+T*
+(- Require only must-have fields for quote-ready handoff) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(4\) Design Direction) Tj
+T*
+(- Mobile-first layout) Tj
+T*
+(- Strong contrast, clean typography, no clutter) Tj
+T*
+(- Real local imagery where possible) Tj
+T*
+(- 3-second clarity test: visitor must instantly understand offer + next step) Tj
+T*
+() Tj
+T*
+(Reference influence: modern insurance lead-gen style similar to high-performing competitive) Tj
+T*
+(funnels.) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(5\) Tracking + Attribution) Tj
+T*
+(- UTM-tagged links for every campaign) Tj
+T*
+(- Separate source/campaign tracking per domain) Tj
+T*
+(- Events to track:) Tj
+T*
+(  - landing view) Tj
+T*
+(  - CTA click) Tj
+T*
+(  - form start) Tj
+T*
+(  - form submit) Tj
+T*
+(  - call click) Tj
+T*
+() Tj
+T*
+(Weekly KPI set:) Tj
+T*
+(- CTR) Tj
+T*
+(- quote start rate) Tj
+T*
+(- quote submit rate) Tj
+T*
+(- cost per lead) Tj
+T*
+(- speed-to-first-contact) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 1371 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(6\) Operational Integration) Tj
+T*
+(- Route all leads into the same intake workflow \(CD/QuoteRUSH\)) Tj
+T*
+(- Apply lifecycle states consistently:) Tj
+T*
+(  New -> Contact Attempted -> Engaged -> Quote Ready -> Proposal Sent -> Won/Lost) Tj
+T*
+(- Exception queue for incomplete/malformed submissions) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(7\) Build Plan \(Fast\)) Tj
+T*
+() Tj
+T*
+(Phase 1 \(2-3 days\)) Tj
+T*
+(- Information architecture) Tj
+T*
+(- wireframes) Tj
+T*
+(- copy skeleton) Tj
+T*
+() Tj
+T*
+(Phase 2 \(2-4 days\)) Tj
+T*
+(- page build + responsive QA) Tj
+T*
+(- form integration + tracking) Tj
+T*
+(- legal/disclosure checks) Tj
+T*
+() Tj
+T*
+(Phase 3 \(1-2 days\)) Tj
+T*
+(- launch + smoke tests) Tj
+T*
+(- first optimization pass after real traffic) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(8\) Immediate Next Actions) Tj
+T*
+(1. Confirm preferred stack for rebuild \(Squarespace, Webflow, or custom\)) Tj
+T*
+(2. Approve v1 messaging for each site) Tj
+T*
+(3. Approve final form fields) Tj
+T*
+(4. Launch hoinsurance.com first, then floridauto.com in parallel sprint) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(Recommendation) Tj
+T*
+(Start with BranchAgencySolutions.com as the authority anchor, then run hoinsurance.com for) Tj
+T*
+(fastest visible conversion gain, and reuse the framework for floridauto.com with auto-specific) Tj
+T*
+(messaging.) Tj
+ET
+endstream
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000129 00000 n 
+0000000199 00000 n 
+0000000325 00000 n 
+0000001924 00000 n 
+0000002050 00000 n 
+0000003528 00000 n 
+0000003654 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+5077
+%%EOF

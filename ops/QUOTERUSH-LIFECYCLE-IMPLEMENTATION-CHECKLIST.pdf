@@ -1,0 +1,211 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 4 0 R 6 0 R ] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1940 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(QuoteRUSH Lifecycle Implementation Checklist) Tj
+T*
+() Tj
+T*
+(#Goal) Tj
+T*
+(Implement the lifecycle map in QuoteRUSH with clean transitions, mandatory fields, and) Tj
+T*
+(automation-safe triggers.) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#1\) Status Setup) Tj
+T*
+(- [ ] Create/confirm statuses:) Tj
+T*
+(  - [ ] New) Tj
+T*
+(  - [ ] Contact Attempted) Tj
+T*
+(  - [ ] Engaged) Tj
+T*
+(  - [ ] Quote Ready) Tj
+T*
+(  - [ ] Proposal Sent) Tj
+T*
+(  - [ ] Won) Tj
+T*
+(  - [ ] Lost) Tj
+T*
+(- [ ] Ensure status names are exact and standardized.) Tj
+T*
+(- [ ] Remove/archive duplicate legacy statuses.) Tj
+T*
+() Tj
+T*
+(#2\) Field Requirements by Stage) Tj
+T*
+(- [ ] Define mandatory fields for each stage.) Tj
+T*
+(- [ ] Add validation prompts/checklists for:) Tj
+T*
+(  - [ ] Contact Attempted \(channel + timestamp\)) Tj
+T*
+(  - [ ] Engaged \(reply timestamp + next action\)) Tj
+T*
+(  - [ ] Quote Ready \(required intake complete\)) Tj
+T*
+(  - [ ] Proposal Sent \(send timestamp + reference\)) Tj
+T*
+(  - [ ] Won/Lost \(outcome date + reason/premium\)) Tj
+T*
+() Tj
+T*
+(#3\) Transition Controls) Tj
+T*
+(- [ ] Enforce allowed transitions only.) Tj
+T*
+(- [ ] Block shortcuts that skip required work.) Tj
+T*
+(- [ ] Add warning for manual overrides.) Tj
+T*
+() Tj
+T*
+(#4\) Automation Hooks) Tj
+T*
+(- [ ] New -> create first-touch task) Tj
+T*
+(- [ ] Contact Attempted -> schedule follow-up task) Tj
+T*
+(- [ ] Engaged -> pause generic drip) Tj
+T*
+(- [ ] Quote Ready -> notify producer queue) Tj
+T*
+(- [ ] Proposal Sent -> set follow-up reminder) Tj
+T*
+(- [ ] Won -> onboarding checklist) Tj
+T*
+(- [ ] Lost -> reason capture + nurture eligibility) Tj
+T*
+() Tj
+T*
+(#5\) Compliance Controls) Tj
+T*
+(- [ ] DNC/TCPA suppression checked before outbound sends) Tj
+T*
+(- [ ] Quiet hours enforced \(9PM–8AM local\)) Tj
+T*
+(- [ ] Opt-out immediately suppresses automation) Tj
+T*
+(- [ ] Audit trail enabled for status changes and sends) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1474 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+() Tj
+T*
+(#6\) SLA Timers) Tj
+T*
+(- [ ] First contact SLA set \(<=30 min business hours\)) Tj
+T*
+(- [ ] Quote Ready -> Proposal SLA set \(<=24h\)) Tj
+T*
+(- [ ] Proposal follow-up SLA set \(24–48h\)) Tj
+T*
+(- [ ] Alerts configured for stale records) Tj
+T*
+() Tj
+T*
+(#7\) Reporting Dashboard) Tj
+T*
+(- [ ] Build stage conversion report) Tj
+T*
+(- [ ] Build cycle-time by stage report) Tj
+T*
+(- [ ] Build lost-reason report) Tj
+T*
+(- [ ] Build owner workload report) Tj
+T*
+() Tj
+T*
+(#8\) QA Test Cases \(Run Before Live\)) Tj
+T*
+(- [ ] New lead created -> first-touch task generated) Tj
+T*
+(- [ ] Outbound logged -> status moves to Contact Attempted) Tj
+T*
+(- [ ] Inbound reply logged -> status moves to Engaged) Tj
+T*
+(- [ ] Required fields complete -> status moves to Quote Ready) Tj
+T*
+(- [ ] Proposal sent -> status moves to Proposal Sent) Tj
+T*
+(- [ ] Outcome set -> Won/Lost with required fields captured) Tj
+T*
+(- [ ] Opt-out event -> all outbound automation stops) Tj
+T*
+() Tj
+T*
+(#9\) Launch Plan) Tj
+T*
+(- [ ] Soft launch with small lead segment) Tj
+T*
+(- [ ] Daily QA review for first 7 days) Tj
+T*
+(- [ ] Fix edge cases quickly) Tj
+T*
+(- [ ] Full rollout after stable metrics) Tj
+T*
+() Tj
+T*
+(#10\) Ownership & Cadence) Tj
+T*
+(- [ ] Name primary owner for lifecycle governance) Tj
+T*
+(- [ ] Name backup owner) Tj
+T*
+(- [ ] Weekly 15-minute lifecycle health review scheduled) Tj
+T*
+(- [ ] Monthly cleanup of status/data anomalies) Tj
+ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000123 00000 n 
+0000000193 00000 n 
+0000000319 00000 n 
+0000002311 00000 n 
+0000002437 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+3963
+%%EOF

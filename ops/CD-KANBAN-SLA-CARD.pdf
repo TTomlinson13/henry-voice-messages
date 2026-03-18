@@ -1,0 +1,223 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 4 0 R 6 0 R ] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1242 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(Client Dynamics Kanban SLA Card \(Homeowner Pilot\)) Tj
+T*
+() Tj
+T*
+(#Board Columns) Tj
+T*
+(1. New) Tj
+T*
+(2. Contact Attempted) Tj
+T*
+(3. Engaged) Tj
+T*
+(4. Quote Ready) Tj
+T*
+(5. Proposal Sent) Tj
+T*
+(6. Won/Lost) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#WIP Limits \(Starting Values\)) Tj
+T*
+(- New: 40) Tj
+T*
+(- Contact Attempted: 60) Tj
+T*
+(- Engaged: 35) Tj
+T*
+(- Quote Ready: 25) Tj
+T*
+(- Proposal Sent: 20) Tj
+T*
+(- Won/Lost: Unlimited archive) Tj
+T*
+() Tj
+T*
+(> Tune WIP limits after 2 weeks of real lead volume and conversion data.) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#SLA Timers + Color Rules) Tj
+T*
+() Tj
+T*
+(#1\) New) Tj
+T*
+(- SLA: First touch within 30 minutes \(business hours\)) Tj
+T*
+(- Green: <15 min) Tj
+T*
+(- Yellow: 15–30 min) Tj
+T*
+(- Red: >30 min) Tj
+T*
+() Tj
+T*
+(#2\) Contact Attempted) Tj
+T*
+(- SLA: Next follow-up within 24 hours) Tj
+T*
+(- Green: <12h) Tj
+T*
+(- Yellow: 12–24h) Tj
+T*
+(- Red: >24h) Tj
+T*
+() Tj
+T*
+(#3\) Engaged) Tj
+T*
+(- SLA: Move to Quote Ready same day) Tj
+T*
+(- Green: same day) Tj
+T*
+(- Yellow: +1 day) Tj
+T*
+(- Red: >1 day) Tj
+T*
+() Tj
+T*
+(#4\) Quote Ready) Tj
+T*
+(- SLA: Proposal prep/send within 24 hours) Tj
+T*
+(- Green: <12h) Tj
+T*
+(- Yellow: 12–24h) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1157 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(- Red: >24h) Tj
+T*
+() Tj
+T*
+(#5\) Proposal Sent) Tj
+T*
+(- SLA: Follow-up within 48 hours) Tj
+T*
+(- Green: <24h) Tj
+T*
+(- Yellow: 24–48h) Tj
+T*
+(- Red: >48h) Tj
+T*
+() Tj
+T*
+(#6\) Won/Lost) Tj
+T*
+(- SLA: N/A \(final state\)) Tj
+T*
+(- Rule: Outcome fields required) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Required Stage-Gate Fields) Tj
+T*
+(- Contact Attempted: channel + attempt timestamp) Tj
+T*
+(- Engaged: last response timestamp + next action date) Tj
+T*
+(- Quote Ready: required intake fields complete) Tj
+T*
+(- Proposal Sent: proposal sent timestamp + reference) Tj
+T*
+(- Lost: reason code required) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Suggested Lost Reason Codes) Tj
+T*
+(- Price) Tj
+T*
+(- Coverage mismatch) Tj
+T*
+(- No response) Tj
+T*
+(- Timing) Tj
+T*
+(- Not eligible) Tj
+T*
+(- Chose competitor) Tj
+T*
+(- Duplicate/invalid lead) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Daily Operator Checklist) Tj
+T*
+(- [ ] Clear all red cards first) Tj
+T*
+(- [ ] Reassign stale cards lacking owner) Tj
+T*
+(- [ ] Validate stage-gate fields before moving cards) Tj
+T*
+(- [ ] Verify DNC/TCPA/quiet-hours suppression on outbound steps) Tj
+ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000123 00000 n 
+0000000193 00000 n 
+0000000319 00000 n 
+0000001613 00000 n 
+0000001739 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+2948
+%%EOF

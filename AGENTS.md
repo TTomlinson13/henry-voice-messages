@@ -207,6 +207,147 @@ Think of it like a human reviewing their journal and updating their mental model
 
 The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, but respect quiet time.
 
+## Voice Greeting → Email (sag + gog)
+
+When Todd asks you to send a brief voice greeting by email, do NOT just respond in text. Use the sag (ElevenLabs TTS) and gog (Gmail) tools explicitly to generate audio and email it.
+
+### When to trigger
+
+Trigger this behavior when the user says things like:
+
+- “Send a brief voice greeting to X by email”
+- “Email Patty a short voice message saying good morning”
+- “Send me a quick voice greeting by email”
+
+### Known contacts
+
+Resolve names to email addresses as follows (update this list over time):
+
+- “me”, “Todd” → `tt@usicna.com`
+- “Patty” → `mrsri8657@gmail.com`  
+
+If you don’t know the email for a name, ask one clarifying question rather than guessing.
+
+### Steps to perform
+
+1. **Determine recipient email**
+
+   - Parse the user’s request.
+   - Map “me” or “Todd” to `tt@usicna.com`.
+   - Map “Patty” to her configured email.
+   - If ambiguous, ask: “What email address should I send the voice greeting to?”
+
+2. **Construct the greeting text**
+
+   - Create a short, warm, natural 1–2 sentence greeting.
+   - Example:
+     > “Hey Patty, it’s Todd’s assistant Henry. Just wanted to send you a quick hello and wish you a great day.”
+
+3. **Generate audio using sag (ElevenLabs)**
+
+   - Use the `sag` CLI to generate an MP3 of that greeting in Todd’s preferred ElevenLabs voice.
+   - Use a temp file path, e.g.:
+
+     ```bash
+     TMPFILE="/tmp/voice-greeting-$(date +%Y%m%d-%H%M%S).mp3"
+     echo "Hey Patty, it’s Todd’s assistant Henry. Just wanted to send you a quick hello and wish you a great day." \
+       | sag --format mp3 > "$TMPFILE"
+     ```
+
+   - If the sag tool call fails for any reason (e.g., API error), explain the failure and offer to send a **text-only email** instead of pretending the audio was sent.
+
+4. **Send the email with gog**
+
+   - Use `gog gmail send` to email the generated audio file.
+   - Command pattern:
+
+     ```bash
+     gog gmail send \
+       --to RECIPIENT_EMAIL \
+       --subject "Voice greeting from Todd" \
+       --body "Attached is a brief voice greeting from Todd’s assistant, Henry." \
+       --attach "$TMPFILE"
+     ```
+
+   - Replace `RECIPIENT_EMAIL` with the resolved address (e.g., `tt@usicna.com` or Patty’s email).
+   - If `gog gmail send` fails (e.g., keyring/passphrase issue), tell Todd what went wrong and do not claim success.
+
+5. **Confirm back to Todd**
+
+   - After a successful send, reply in chat with a short confirmation, for example:
+     - “Done — I generated a voice greeting and emailed it to you at tt@usicna.com.”
+     - “Done — I sent Patty a brief voice greeting at patty@example.com.”
+
+### Error handling
+
+- If sag (TTS) fails:
+  - Say what failed.
+  - Ask if Todd wants you to send a text-only email via gog instead.
+
+- If gog (email send) fails:
+  - Say what failed.
+  - Do not pretend the email was sent.
+
+## Voice Greeting → Email (sag + gog)
+
+When Todd asks you to send a brief voice greeting by email, do NOT just respond in text. Use the sag (ElevenLabs TTS) and gog (Gmail) tools to generate audio and email it.
+
+### When to trigger
+
+Trigger this behavior when the user says things like:
+
+- “Send a brief voice greeting to X by email”
+- “Email Patty a short voice message”
+- “Send me a quick voice greeting by email”
+
+### Known contacts
+
+Resolve names to email addresses as follows:
+
+- “me”, “Todd” → `tt@usicna.com`
+- “Patty” → `mrsri8657@gmail.com`   
+
+If you don’t know the email for a name, ask one clarifying question rather than guessing.
+
+### Steps to perform
+
+1. **Determine recipient email**
+   - Parse the request and map to the correct email from the list above.
+   - If ambiguous, ask: “What email address should I send the voice greeting to?”
+
+2. **Construct the greeting text**
+   - Create a short, warm, natural 1–2 sentence greeting.
+   - Example:
+     > “Hey Patty, it’s Todd’s assistant Henry. Just wanted to send you a quick hello and wish you a great day.”
+
+3. **Generate audio using sag (ElevenLabs)**
+   - Use the `sag` CLI to generate an MP3 of that greeting in Todd’s preferred ElevenLabs voice.
+   - Use a temp file path, e.g.:
+     ```bash
+     TMPFILE="/tmp/voice-greeting-$(date +%Y%m%d-%H%M%S).mp3"
+     echo "Hey Patty, it’s Todd’s assistant Henry. Just wanted to send you a quick hello and wish you a great day." \
+       | sag --format mp3 > "$TMPFILE"
+     ```
+   - If sag fails (e.g. API error), explain the failure and offer to send a **text-only email** instead.
+
+4. **Send the email with gog**
+   - Use `gog gmail send` to email the generated audio file.
+   - Command pattern:
+     ```bash
+     gog gmail send \
+       --to RECIPIENT_EMAIL \
+       --subject "Voice greeting from Todd" \
+       --body "Attached is a brief voice greeting from Todd’s assistant, Henry." \
+       --attach "$TMPFILE"
+     ```
+   - Replace `RECIPIENT_EMAIL` with the resolved address (e.g. `tt@usicna.com` or Patty’s email).
+   - If `gog gmail send` fails, tell Todd what went wrong and do not pretend the email was sent.
+
+5. **Confirm back to Todd**
+   - After a successful send, reply in chat with a short confirmation, e.g.:
+     - “Done — I generated a voice greeting and emailed it to you at tt@usicna.com.”
+     - “Done — I sent Patty a brief voice greeting at mrsri8657@gmail.com.”
+
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.

@@ -1,0 +1,8 @@
+Hi Jamie,
+
+Sharing a copy of our Insurance Commission Reconciliation Buy-vs-Build Scorecard for context as we prioritize agency automation projects.
+
+Todd asked that I loop you in as our key contact for Client Dynamics / QuoteRUSH technical coordination (API and backend workflow support).
+
+Thanks,
+Henry

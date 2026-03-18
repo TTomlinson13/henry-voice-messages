@@ -1,0 +1,375 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 4 0 R 6 0 R 8 0 R 10 0 R ] /Count 4 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1731 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(BranchAgencySolutions.com Overhaul Blueprint \(v1\)) Tj
+T*
+() Tj
+T*
+(Objective) Tj
+T*
+(Rebuild Branch Agency Solutions into a modern MGA authority site that drives producer/agency) Tj
+T*
+(submissions, showcases private flood expertise, and routes opportunities into a unified) Tj
+T*
+(operations pipeline.) Tj
+T*
+() Tj
+T*
+(Strategic Role) Tj
+T*
+(- Primary brand role: MGA authority platform \(flood-first, multi-line capability\)) Tj
+T*
+(- Audience: retail agents, partner agencies, distribution channels, and select direct prospects) Tj
+T*
+(- Business goal: increase qualified submissions and partner onboarding) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(1\) Core Positioning) Tj
+T*
+() Tj
+T*
+(Primary Promise) Tj
+T*
+(Private flood and specialty solutions with faster response, cleaner underwriting intake, and) Tj
+T*
+(dependable agency support.) Tj
+T*
+() Tj
+T*
+(Message Pillars) Tj
+T*
+(1. MGA expertise \(not generic retail quoting\)) Tj
+T*
+(2. Private flood depth + additional lines) Tj
+T*
+(3. Fast turnaround and clear submission standards) Tj
+T*
+(4. Partner-first service model) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(2\) Required v1 Sitemap) Tj
+T*
+(1. Home) Tj
+T*
+(2. Flood Programs) Tj
+T*
+(3. Other Lines / Markets) Tj
+T*
+(4. For Agents \(Appetite + Submission Guidelines\)) Tj
+T*
+(5. Become a Partner) Tj
+T*
+(6. About Branch Agency Solutions) Tj
+T*
+(7. Contact / Submission) Tj
+T*
+(8. Compliance, Licensing, Privacy, Disclosures) Tj
+T*
+() Tj
+T*
+(Optional v1.1:) Tj
+T*
+(- Carrier/market spotlight page) Tj
+T*
+(- Resource center \(forms, underwriting tips\)) Tj
+T*
+(- Case studies/testimonials) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(3\) Homepage Conversion Structure) Tj
+T*
+() Tj
+T*
+(Above the Fold) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1416 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(- Headline: MGA authority + private flood strength) Tj
+T*
+(- Subhead: fast submission-to-response promise) Tj
+T*
+(- Primary CTA: Submit a Risk) Tj
+T*
+(- Secondary CTA: Become a Partner) Tj
+T*
+() Tj
+T*
+(Trust Strip) Tj
+T*
+(- Years in market) Tj
+T*
+(- States served) Tj
+T*
+(- Program types) Tj
+T*
+(- Service SLA commitment) Tj
+T*
+() Tj
+T*
+(Program Blocks) Tj
+T*
+(- Private Flood) Tj
+T*
+(- Coastal/Challenging Risks) Tj
+T*
+(- Additional specialty/commercial options) Tj
+T*
+() Tj
+T*
+(Operational Proof) Tj
+T*
+(- Intake standards) Tj
+T*
+(- Turnaround expectations) Tj
+T*
+(- Dedicated support flow) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(4\) Submission Flow Design) Tj
+T*
+() Tj
+T*
+(Step 1 \(Fast Intake\)) Tj
+T*
+(- Producer/agency name) Tj
+T*
+(- Insured name) Tj
+T*
+(- Risk type/line) Tj
+T*
+(- Property address/state) Tj
+T*
+(- Contact email/phone) Tj
+T*
+() Tj
+T*
+(Step 2 \(Structured Details\)) Tj
+T*
+(- Coverage targets) Tj
+T*
+(- occupancy/construction basics) Tj
+T*
+(- prior coverage/loss indicators) Tj
+T*
+(- document upload) Tj
+T*
+() Tj
+T*
+(Routing Rules) Tj
+T*
+(- Flood submissions -> flood queue) Tj
+T*
+(- Specialty/commercial -> line-specific queue) Tj
+T*
+(- Missing required fields -> exception queue) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(5\) Brand + Visual Direction) Tj
+T*
+(- Professional MGA tone \(clean, credible, not overdesigned\)) Tj
+T*
+(- Strong contrast and readability) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 1385 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(- Program cards and clear CTA hierarchy) Tj
+T*
+(- Avoid cluttered hero sliders) Tj
+T*
+(- Mobile-first interactions) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(6\) Tracking + KPI Framework) Tj
+T*
+(Track at minimum:) Tj
+T*
+(- program page views) Tj
+T*
+(- submission starts) Tj
+T*
+(- submission completes) Tj
+T*
+(- partner inquiry submissions) Tj
+T*
+(- call/email click-throughs) Tj
+T*
+() Tj
+T*
+(Weekly KPIs:) Tj
+T*
+(- submission completion rate) Tj
+T*
+(- partner lead count) Tj
+T*
+(- quote turnaround time) Tj
+T*
+(- bind conversion by program) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(7\) Backend Integration) Tj
+T*
+(- Unified intake backend with CD/QuoteRUSH workflows) Tj
+T*
+(- Lifecycle status standardization:) Tj
+T*
+(  New -> Intake Review -> Quote Ready -> Proposal Sent -> Won/Lost) Tj
+T*
+(- Exception handling for missing docs/fields) Tj
+T*
+(- Audit trail on edits and handoffs) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(8\) Build Plan) Tj
+T*
+() Tj
+T*
+(Phase 1 \(2-3 days\)) Tj
+T*
+(- Messaging architecture + wireframes) Tj
+T*
+(- Form field schema + routing rules) Tj
+T*
+() Tj
+T*
+(Phase 2 \(3-4 days\)) Tj
+T*
+(- Build pages + responsive QA) Tj
+T*
+(- Integrations + events tracking) Tj
+T*
+() Tj
+T*
+(Phase 3 \(1-2 days\)) Tj
+T*
+(- Launch + QA) Tj
+T*
+(- First optimization pass from live traffic) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(9\) Immediate Next Actions) Tj
+ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 11 0 R >>
+endobj
+11 0 obj
+<< /Length 314 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(1. Approve positioning statement and headline direction) Tj
+T*
+(2. Finalize program list for v1 navigation) Tj
+T*
+(3. Approve submission form required fields) Tj
+T*
+(4. Decide platform path \(Squarespace/Webflow/custom\)) Tj
+T*
+(5. Launch v1 and start 14-day optimization cycle) Tj
+ET
+endstream
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000136 00000 n 
+0000000206 00000 n 
+0000000332 00000 n 
+0000002115 00000 n 
+0000002241 00000 n 
+0000003709 00000 n 
+0000003835 00000 n 
+0000005272 00000 n 
+0000005400 00000 n 
+trailer
+<< /Size 12 /Root 1 0 R >>
+startxref
+5766
+%%EOF

@@ -1,0 +1,295 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 4 0 R 6 0 R 8 0 R ] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1484 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(Canopy Connect → QuoteRUSH Optimization Runbook) Tj
+T*
+() Tj
+T*
+(Objective) Tj
+T*
+(Maximize lead quality, speed-to-quote, and close rate by tightening the Canopy Connect to) Tj
+T*
+(QuoteRUSH workflow.) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(A\) Intake & Mapping QA \(Day 1\)) Tj
+T*
+() Tj
+T*
+(1. Confirm required fields always map into QuoteRUSH:) Tj
+T*
+(   - Applicant name) Tj
+T*
+(   - DOB) Tj
+T*
+(   - Address/ZIP) Tj
+T*
+(   - Contact info \(email/phone\)) Tj
+T*
+(   - Vehicle/property details) Tj
+T*
+(   - Current carrier/policy dates \(if collected\)) Tj
+T*
+() Tj
+T*
+(2. Validate field formats:) Tj
+T*
+(   - Phone normalization) Tj
+T*
+(   - Date format consistency) Tj
+T*
+(   - Address standardization) Tj
+T*
+() Tj
+T*
+(3. Test 5 real-world scenarios:) Tj
+T*
+(   - New business auto) Tj
+T*
+(   - Homeowners rewrite) Tj
+T*
+(   - Multi-vehicle household) Tj
+T*
+(   - Condo/tenant) Tj
+T*
+(   - Partial/incomplete intake) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(B\) Lead Quality Controls \(Day 1–2\)) Tj
+T*
+() Tj
+T*
+(4. Duplicate prevention rules:) Tj
+T*
+(   - Match on email + phone + address) Tj
+T*
+(   - Flag probable duplicates for review queue) Tj
+T*
+() Tj
+T*
+(5. Missing-data flags:) Tj
+T*
+(   - Auto-tag "Needs Follow-up" when critical fields are missing) Tj
+T*
+() Tj
+T*
+(6. Source tagging:) Tj
+T*
+(   - Mark Canopy-origin leads in QuoteRUSH for performance tracking) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(C\) Workflow Speed \(Day 2\)) Tj
+T*
+() Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1433 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(7. Auto-routing rules:) Tj
+T*
+(   - Route by line of business + state + producer queue) Tj
+T*
+() Tj
+T*
+(8. SLA timers:) Tj
+T*
+(   - First-touch alert at 10–15 minutes) Tj
+T*
+(   - Escalation if untouched at 30 minutes) Tj
+T*
+() Tj
+T*
+(9. Standard status flow:) Tj
+T*
+(   - New → Working → Quoted → Bound/Lost) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(D\) Producer/CSR Enablement \(Day 2–3\)) Tj
+T*
+() Tj
+T*
+(10. One-page SOP:) Tj
+T*
+(   - "What to check first when Canopy lead arrives") Tj
+T*
+(   - "What to do if data is incomplete") Tj
+T*
+(   - "When to call vs text vs email") Tj
+T*
+() Tj
+T*
+(11. Templates:) Tj
+T*
+(   - Missing info follow-up script) Tj
+T*
+(   - Quote-ready confirmation script) Tj
+T*
+(   - "Need docs" checklist message) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(E\) Conversion Tracking \(Weekly\)) Tj
+T*
+() Tj
+T*
+(12. Track these KPIs by Canopy source:) Tj
+T*
+(   - Lead-to-quote %) Tj
+T*
+(   - Quote-to-bind %) Tj
+T*
+(   - Avg response time) Tj
+T*
+(   - Time-to-quote) Tj
+T*
+(   - Close rate by producer) Tj
+T*
+() Tj
+T*
+(13. Weekly review:) Tj
+T*
+(   - Top 3 blockers) Tj
+T*
+(   - Top 3 wins) Tj
+T*
+(   - 1 workflow tweak for next week) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(F\) Automation Opportunities \(Phase 2\)) Tj
+T*
+() Tj
+T*
+(14. Auto-create follow-up tasks when:) Tj
+T*
+(   - Lead incomplete) Tj
+T*
+(   - Quote not sent in X hours) Tj
+T*
+(   - Renewal window opens) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 621 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+() Tj
+T*
+(15. Daily manager digest:) Tj
+T*
+(   - Canopy leads received) Tj
+T*
+(   - Worked/unworked) Tj
+T*
+(   - Overdue follow-ups) Tj
+T*
+(   - Binds won) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(Scorecard Template \(Weekly\)) Tj
+T*
+() Tj
+T*
+(- Week of: __________) Tj
+T*
+(- Total Canopy leads: __________) Tj
+T*
+(- Leads worked within SLA: __________) Tj
+T*
+(- Lead-to-quote %: __________) Tj
+T*
+(- Quote-to-bind %: __________) Tj
+T*
+(- Avg response time: __________) Tj
+T*
+(- Time-to-quote: __________) Tj
+T*
+(- Top blocker: __________) Tj
+T*
+(- This week’s process change: __________) Tj
+ET
+endstream
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000129 00000 n 
+0000000199 00000 n 
+0000000325 00000 n 
+0000001861 00000 n 
+0000001987 00000 n 
+0000003472 00000 n 
+0000003598 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+4270
+%%EOF

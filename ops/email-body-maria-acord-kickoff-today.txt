@@ -1,0 +1,20 @@
+Hi Maria,
+
+Kicking off ACORD 125 pilot execution today.
+
+We need to lock these 3 items first:
+1) Required vs optional field list (Quote-Ready minimum)
+2) Quote-Ready gate rules (what blocks progression)
+3) First 10 pilot submissions
+
+Execution sequence once locked:
+- Confirm field dictionary
+- Approve pilot file set
+- Run validation + mapping (v0.1)
+- Route exceptions to review
+- Score pilot (completeness, confidence, correction time)
+
+If you’re ready, we can start immediately.
+
+Thanks,
+Todd + Henry

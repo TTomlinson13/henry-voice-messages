@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Todd Tomlinson
+ORG:Tomlinson & Co Inc
+TITLE:President
+TEL;TYPE=WORK,VOICE:800-616-1418
+EMAIL;TYPE=INTERNET:tt@tomlinsonandco.com
+URL:https://www.tomlinsonandco.com
+ADR;TYPE=WORK:;;921 Douglas Ave #102;Altamonte Springs;FL;32714;USA
+END:VCARD

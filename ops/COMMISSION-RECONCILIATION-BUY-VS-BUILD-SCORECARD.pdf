@@ -1,0 +1,305 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 4 0 R 6 0 R 8 0 R ] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 2105 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(Insurance Commission Reconciliation — Buy vs Build Scorecard) Tj
+T*
+() Tj
+T*
+(#Decision Goal) Tj
+T*
+(Select the best path to launch a reliable commission reconciliation capability for Tomlinson &) Tj
+T*
+(Co \(100+ carriers\) with measurable ROI in 90 days.) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Options Compared) Tj
+T*
+(- Option A: Buy \(single vendor platform\)) Tj
+T*
+(- Option B: Build in-house \(Manus/OpenClaw/Lindy + internal workflow stack\)) Tj
+T*
+(- Option C: Hybrid \(buy for ingestion + build internal exception workflow/reporting\)) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Weighted Criteria \(100 points total\)) Tj
+T*
+() Tj
+T*
+(| Criterion | Weight | Why it matters |) Tj
+T*
+(|---|---:|---|) Tj
+T*
+(| Carrier format coverage | 15 | 100+ carriers means ingestion breadth is critical |) Tj
+T*
+(| Match accuracy + rules flexibility | 15 | Policy-level trust determines adoption |) Tj
+T*
+(| Exception workflow quality | 12 | Recovery depends on fast, assignable exception handling |) Tj
+T*
+(| Split/override complexity support | 10 | Producer compensation integrity |) Tj
+T*
+(| Integrations \(CD/QuoteRUSH/Drive/Email\) | 10 | Must fit existing operating stack |) Tj
+T*
+(| Time-to-value | 10 | Need operational gains quickly |) Tj
+T*
+(| Total cost of ownership \(12 months\) | 10 | Budget discipline vs hidden effort |) Tj
+T*
+(| Reporting + auditability | 8 | Management visibility + controls |) Tj
+T*
+(| Security/compliance posture | 5 | Data and access governance |) Tj
+T*
+(| Portability/vendor lock risk | 5 | Exit options and data ownership |) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Scoring Scale) Tj
+T*
+(- 1 = poor) Tj
+T*
+(- 3 = acceptable) Tj
+T*
+(- 5 = strong) Tj
+T*
+() Tj
+T*
+(Weighted Score = \(Score / 5\) * Weight) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Initial Scorecard \(Draft\)) Tj
+T*
+() Tj
+T*
+(| Criterion | Weight | Buy | Build | Hybrid |) Tj
+T*
+(|---|---:|---:|---:|---:|) Tj
+T*
+(| Carrier format coverage | 15 | 4 | 2 | 4 |) Tj
+T*
+(| Match accuracy + rules flexibility | 15 | 3 | 4 | 4 |) Tj
+T*
+(| Exception workflow quality | 12 | 3 | 4 | 5 |) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 2164 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(| Split/override support | 10 | 4 | 3 | 4 |) Tj
+T*
+(| Integrations fit | 10 | 3 | 5 | 4 |) Tj
+T*
+(| Time-to-value | 10 | 4 | 2 | 4 |) Tj
+T*
+(| 12-mo TCO | 10 | 2 | 4 | 3 |) Tj
+T*
+(| Reporting + auditability | 8 | 4 | 4 | 5 |) Tj
+T*
+(| Security/compliance | 5 | 4 | 3 | 4 |) Tj
+T*
+(| Portability/lock risk | 5 | 2 | 5 | 4 |) Tj
+T*
+(| Total \(out of 100\) |  | 66.4 | 70.4 | 84.0 |) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Interpretation) Tj
+T*
+(- Hybrid currently scores best: fastest practical path without giving up control.) Tj
+T*
+(- Build-only can win long-term but slower first value.) Tj
+T*
+(- Buy-only can launch quickly but may create lock-in and integration compromises.) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Recommendation \(Current\)) Tj
+T*
+(##Choose Hybrid for v1-v2) Tj
+T*
+(1. Use vendor capabilities for high-friction ingestion/parsing where they are strongest.) Tj
+T*
+(2. Keep exception queue, workflow routing, and management reporting in your internal stack.) Tj
+T*
+(3. Preserve normalized internal data model so you can swap vendors later.) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#90-Day Plan by Option) Tj
+T*
+() Tj
+T*
+(#If Hybrid \(recommended\)) Tj
+T*
+(- Days 1–14: Pilot top 10–20 carriers with clear match/variance metrics) Tj
+T*
+(- Days 15–45: Add exception routing + owner SLA + dispute templates) Tj
+T*
+(- Days 46–90: Expand to majority carrier volume; publish weekly recovery dashboard) Tj
+T*
+() Tj
+T*
+(#If Build-only) Tj
+T*
+(- Days 1–30: Ingestion + canonical schema + exact match) Tj
+T*
+(- Days 31–60: Fuzzy match + exception Kanban + reporting) Tj
+T*
+(- Days 61–90: Scale carrier coverage + optimize recovery workflow) Tj
+T*
+() Tj
+T*
+(#If Buy-only) Tj
+T*
+(- Days 1–14: Vendor onboarding + data mapping) Tj
+T*
+(- Days 15–45: Validate match rates + split logic + exception handling) Tj
+T*
+(- Days 46–90: Lock governance + exit/data export safeguards) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Vendor Due Diligence Questions \(Use in demos\)) Tj
+T*
+(1. What policy-level match rate do clients achieve at 30/60/90 days?) Tj
+T*
+(2. How do you handle carrier statement format drift over time?) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 1107 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(3. Can we customize tolerance and reason-code logic per carrier?) Tj
+T*
+(4. How are producer splits/overrides versioned and audited?) Tj
+T*
+(5. What are full export options \(raw + normalized + audit logs\)?) Tj
+T*
+(6. What implementation support is included vs paid add-on?) Tj
+T*
+(7. Can we keep our own exception workflow while using your ingestion layer?) Tj
+T*
+(8. Contract: term, auto-renewal, overages, termination, data return SLA?) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#KPI Benchmarks to Track \(avoid marketing fluff\)) Tj
+T*
+(- Policy-level match rate) Tj
+T*
+(- Net variance recovered \($\)) Tj
+T*
+(- Exception aging \(median days\)) Tj
+T*
+(- Manual hours reduced) Tj
+T*
+(- Close-cycle time reduction) Tj
+T*
+(- Carrier dispute win rate) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Final Decision Gate) Tj
+T*
+(Proceed with selected path only if pilot meets:) Tj
+T*
+(- >=85% policy-level match on pilot carriers) Tj
+T*
+(- <=5 business days median exception resolution) Tj
+T*
+(- Demonstrable monthly recovery value) Tj
+T*
+(- Acceptable 12-month TCO and operational fit) Tj
+ET
+endstream
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000129 00000 n 
+0000000199 00000 n 
+0000000325 00000 n 
+0000002482 00000 n 
+0000002608 00000 n 
+0000004824 00000 n 
+0000004950 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+6109
+%%EOF

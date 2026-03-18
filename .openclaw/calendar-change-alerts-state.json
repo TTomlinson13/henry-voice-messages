@@ -1,0 +1,39 @@
+{
+  "jobId": "5674612f-41d3-41c7-85d7-b81621191803",
+  "updatedAt": "2026-03-18T18:20:00Z",
+  "date": "2026-03-18",
+  "timezone": "America/New_York",
+  "window": {
+    "from": "2026-03-18T04:00:00Z",
+    "to": "2026-03-19T03:59:59Z"
+  },
+  "events": [
+    {
+      "id": "7ucm8mf0lrkb1e1crjh1ctt3l1",
+      "summary": "Game",
+      "status": "confirmed",
+      "start": "2026-03-18",
+      "end": "2026-03-19",
+      "updated": "2026-01-23T17:23:42.599Z",
+      "calendar": "maria@usicna.com"
+    },
+    {
+      "id": "mem5cthlnv6i0480pv62jhg7go_20260318",
+      "summary": "Colonial Point go out",
+      "status": "confirmed",
+      "start": "2026-03-18",
+      "end": "2026-03-19",
+      "updated": "2014-12-29T17:21:13.145Z",
+      "calendar": "usicna.com_i35dgaf75qr3vg5hj0vq0um57c@group.calendar.google.com"
+    },
+    {
+      "id": "ynq1uzGH3uOOjSpbCIu7nDKSXO",
+      "summary": "Your Order Summary: TYQIDJ5RC - Transaction #13661",
+      "status": "confirmed",
+      "start": "2026-03-18T04:43:54-04:00",
+      "end": "2026-03-18T04:43:54-04:00",
+      "updated": "2026-03-17T19:45:32.790Z",
+      "calendar": "maria@usicna.com"
+    }
+  ]
+}

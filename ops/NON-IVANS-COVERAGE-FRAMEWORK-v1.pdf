@@ -1,0 +1,411 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 4 0 R 6 0 R 8 0 R 10 0 R ] /Count 4 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1873 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(Non-IVANS Coverage Framework v1) Tj
+T*
+() Tj
+T*
+(Objective) Tj
+T*
+(Create a single daily operating view that combines IVANS and non-IVANS carrier activity so) Tj
+T*
+(policy status, renewals, and transaction visibility are reliable across all carriers.) Tj
+T*
+() Tj
+T*
+(Why This Is Needed) Tj
+T*
+(Current reality: only ~25-35% of carriers reliably update through IVANS. If we rely only on) Tj
+T*
+(IVANS, we miss a large portion of policy movement and create false confidence.) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(1\) Source-of-Truth Model) Tj
+T*
+(Use a multi-source hierarchy, not a single feed.) Tj
+T*
+() Tj
+T*
+(Signal Tiers) Tj
+T*
+(1. Tier 1 \(High confidence\): Direct carrier confirmation \(download file, portal evidence,) Tj
+T*
+(issued policy docs\)) Tj
+T*
+(2. Tier 2 \(Medium confidence\): IVANS transaction confirmations) Tj
+T*
+(3. Tier 3 \(Low confidence\): CRM/manual notes without supporting artifact) Tj
+T*
+() Tj
+T*
+(Record-Level Status Labels) Tj
+T*
+(- Verified via Carrier \(Tier 1\)) Tj
+T*
+(- Verified via IVANS \(Tier 2\)) Tj
+T*
+(- Pending Non-IVANS Confirmation) Tj
+T*
+(- Exception: Missing Update) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(2\) Daily Monitoring Architecture) Tj
+T*
+() Tj
+T*
+(Feed A: IVANS Lane) Tj
+T*
+(- Failed transactions) Tj
+T*
+(- Canceled transactions) Tj
+T*
+(- Processed summary) Tj
+T*
+(- Timestamp + policy key mapping) Tj
+T*
+() Tj
+T*
+(Feed B: Non-IVANS Lane) Tj
+T*
+(- Carrier portal download logs) Tj
+T*
+(- Carrier email docs \(decs, binders, cancellation notices\)) Tj
+T*
+(- Manual upload queue \(for broker/carrier docs\)) Tj
+T*
+(- QuoteRUSH/CD policy-change events where available) Tj
+T*
+() Tj
+T*
+(Merge Logic) Tj
+T*
+(- Normalize by policy number + named insured + effective date) Tj
+T*
+(- Prefer Tier 1 over Tier 2 when conflicting) Tj
+T*
+(- Flag unresolved mismatches to exception queue) Tj
+T*
+() Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1591 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(---) Tj
+T*
+() Tj
+T*
+(3\) Daily Dashboard \(Operational View\)) Tj
+T*
+() Tj
+T*
+(Section A: Verified Today) Tj
+T*
+(- Count of updates verified via carrier) Tj
+T*
+(- Count of updates verified via IVANS) Tj
+T*
+() Tj
+T*
+(Section B: Pending Confirmation) Tj
+T*
+(- Policies with expected update but no Tier 1 evidence yet) Tj
+T*
+(- Aging buckets: <24h, 24-48h, >48h) Tj
+T*
+() Tj
+T*
+(Section C: Exceptions Requiring Action) Tj
+T*
+(- Failed/canceled IVANS items) Tj
+T*
+(- Non-IVANS carriers with missing daily evidence) Tj
+T*
+(- Conflicts \(IVANS says X, carrier artifact says Y\)) Tj
+T*
+() Tj
+T*
+(Section D: SLA Snapshot) Tj
+T*
+(- % verified within 24h) Tj
+T*
+(- % unresolved >48h) Tj
+T*
+(- By carrier and by line of business) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(4\) Team Workflow) Tj
+T*
+() Tj
+T*
+(Roles) Tj
+T*
+(- Ops/CSR queue owner: first-pass triage) Tj
+T*
+(- Commercial reviewer \(Maria\): underwriting-critical exceptions) Tj
+T*
+(- Producer owner: client-facing decision/escalation) Tj
+T*
+() Tj
+T*
+(Daily Cadence) Tj
+T*
+(1\) Morning: ingest and normalize both feeds) Tj
+T*
+(2\) Midday: clear high-severity exceptions) Tj
+T*
+(3\) EOD: unresolved list + owner assignment for next day) Tj
+T*
+() Tj
+T*
+(SLA Targets \(v1\)) Tj
+T*
+(- High severity exceptions: same business day) Tj
+T*
+(- Standard exceptions: within 24h) Tj
+T*
+(- Aged >48h unresolved: mandatory escalation) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(5\) Carrier Segmentation Strategy) Tj
+T*
+() Tj
+T*
+(Segment 1: IVANS-Reliable Carriers) Tj
+T*
+(- Default auto-monitoring) Tj
+T*
+(- Minimal manual effort) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 1614 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+() Tj
+T*
+(Segment 2: Partial-IVANS Carriers) Tj
+T*
+(- Hybrid checks \(IVANS + portal/email validation\)) Tj
+T*
+() Tj
+T*
+(Segment 3: Non-IVANS Carriers) Tj
+T*
+(- Mandatory non-IVANS collection path) Tj
+T*
+(- Scheduled portal/email reconciliation) Tj
+T*
+() Tj
+T*
+(Maintain this mapping list as a living table and review monthly.) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(6\) Data Model Additions \(for CD/QuoteRUSH tracking\)) Tj
+T*
+(Required fields to add/update per policy record:) Tj
+T*
+(- source_primary \(carrier|ivans|manual\)) Tj
+T*
+(- source_confidence \(tier1|tier2|tier3\)) Tj
+T*
+(- source_last_verified_at) Tj
+T*
+(- verification_artifact_link) Tj
+T*
+(- exception_code) Tj
+T*
+(- exception_owner) Tj
+T*
+(- exception_due_at) Tj
+T*
+(- sla_bucket) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(7\) Automation Rules \(v1\)) Tj
+T*
+(1. If no Tier 1 artifact after expected update window -> set Pending Non-IVANS Confirmation) Tj
+T*
+(2. If unresolved >24h -> create task + assign owner) Tj
+T*
+(3. If unresolved >48h -> escalate to management queue) Tj
+T*
+(4. If conflict detected between feeds -> set Exception: Data Conflict and block auto-close) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(8\) Reporting Outputs) Tj
+T*
+(Send daily summary to: orlando@usicna.com) Tj
+T*
+() Tj
+T*
+(Include:) Tj
+T*
+(- Verified counts by source) Tj
+T*
+(- Exception counts by type) Tj
+T*
+(- Top aged unresolved items) Tj
+T*
+(- Carrier breakdown \(IVANS vs non-IVANS coverage\)) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(9\) Implementation Plan \(2 Weeks\)) Tj
+T*
+() Tj
+T*
+(Week 1) Tj
+T*
+(- Define carrier segmentation table) Tj
+ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 11 0 R >>
+endobj
+11 0 obj
+<< /Length 918 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(- Add source-confidence fields) Tj
+T*
+(- Build merged daily report draft) Tj
+T*
+(- Start manual exception queue) Tj
+T*
+() Tj
+T*
+(Week 2) Tj
+T*
+(- Add automation rules for aging/escalation) Tj
+T*
+(- Launch daily summary email output) Tj
+T*
+(- Review KPI baseline and tune thresholds) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(10\) KPI Targets \(First 30 Days\)) Tj
+T*
+(- Increase verified daily visibility to >80% of total policy movement) Tj
+T*
+(- Reduce unresolved >48h exceptions by 40%) Tj
+T*
+(- Achieve 95% exception ownership assignment within same day) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(Immediate Next Actions) Tj
+T*
+(1\) Build carrier segmentation sheet \(IVANS-reliable / partial / non-IVANS\)) Tj
+T*
+(2\) Add source-confidence fields to tracking workflow) Tj
+T*
+(3\) Launch daily merged summary to `orlando@usicna.com`) Tj
+T*
+(4\) Begin exception aging SLA tracking tomorrow) Tj
+ET
+endstream
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000136 00000 n 
+0000000206 00000 n 
+0000000332 00000 n 
+0000002257 00000 n 
+0000002383 00000 n 
+0000004026 00000 n 
+0000004152 00000 n 
+0000005818 00000 n 
+0000005946 00000 n 
+trailer
+<< /Size 12 /Root 1 0 R >>
+startxref
+6916
+%%EOF

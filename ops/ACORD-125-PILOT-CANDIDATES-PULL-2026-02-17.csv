@@ -1,0 +1,11 @@
+pilot_id,account_name,source_channel,line_of_business,contact_name,email,phone,mailing_address,city,state,zip,contact_status,last_inserted_date,notes
+PILOT-001,David Roberts,CD Contact List,Unknown,David Roberts,,, ,Pembroke Pines,FL,33029,Active,2026-02-17 05:16:02,Needs enrichment for commercial fields
+PILOT-002,Juan Rubero,CD Contact List,Unknown,Juan Rubero,,, ,Orlando,FL,32824,New Lead,2026-02-17 00:02:14,Good recent lead candidate
+PILOT-003,Juan Rubero,CD Contact List,Unknown,Juan Rubero,,, ,Orlando,FL,32824,Active,2026-02-17 00:02:06,Possible duplicate with PILOT-002
+PILOT-004,Mariquitta Toussaint,CD Contact List,Unknown,Mariquitta Toussaint,mtoussaint@gmail.com,(954) 638-7574,801 Nw 109th St,Miami,FL,33168,Quoted,2026-02-16 20:04:51,Has contact fields; good validation case
+PILOT-005,David Roman,CD Contact List,Unknown,David Roman,d5kroman@charter.net,(203) 516-8156,7447 Chenille Ct,Naples,FL,34114,Quoted,2026-02-16 10:20:35,Has contact fields; good validation case
+PILOT-006,Robin R,CD Contact List,Unknown,Robin R,,, ,Jacksonville,FL,322263122,Active,2026-02-16 08:29:18,Data quality issue in ZIP format
+PILOT-007,Jacob Klein,CD Contact List,Unknown,Jacob Klein,robinshaina@gmail.com,(954) 593-6828,2690 Sw 22nd Ave Apt 205 Apt 205,Miami,FL,33133,New Lead,2026-02-16 06:43:39,Good recent lead candidate
+PILOT-008,Kathleen Donohue,CD Contact List,Unknown,Kathleen Donohue,,,24811 Marina Del Ray Dr,Bonita Springs,FL,34135,New Lead,2026-02-15 21:10:06,Missing phone/email to test exception flow
+PILOT-009,Stephen Collins,CD Contact List,Unknown,Stephen Collins,,, ,Satellite Beach,FL,32937,New Lead,2026-02-15 21:10:06,Missing phone/email to test exception flow
+PILOT-010,Justin Box,CD Contact List,Unknown,Justin Box,,,27936 Singletree Ln,,TX,,New Lead,2026-02-15 21:10:04,Out-of-state/incomplete location fields

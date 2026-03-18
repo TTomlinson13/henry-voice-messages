@@ -1,0 +1,223 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 4 0 R 6 0 R ] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1730 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(Homeowner First-Touch Templates \(Deploy-Ready\)) Tj
+T*
+() Tj
+T*
+(#SMS Sequence \(Compliance-Safe\)) Tj
+T*
+() Tj
+T*
+(##SMS #1 \(Initial\)) Tj
+T*
+(Hi {{first_name}}, this is {{agent_name}} with Tomlinson & Co. Thanks for your homeowners quote) Tj
+T*
+(request — I can help you finish in about 2 minutes. Want to do it now?) Tj
+T*
+() Tj
+T*
+(##SMS #2 \(Follow-up, 24–48h\)) Tj
+T*
+(Hi {{first_name}} — quick follow-up from Tomlinson & Co on your homeowners quote. If you still) Tj
+T*
+(want options, I can help you complete the remaining details fast. Reply YES and I’ll send the) Tj
+T*
+(next step.) Tj
+T*
+() Tj
+T*
+(##SMS #3 \(Final gentle close\)) Tj
+T*
+(Hi {{first_name}}, this is my final follow-up on your homeowners quote request. If you’d like) Tj
+T*
+(to continue, reply QUOTE and we’ll pick up where you left off. If not, no problem at all.) Tj
+T*
+() Tj
+T*
+(##SMS Opt-out line \(append where required\)) Tj
+T*
+(Reply STOP to opt out.) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Email Sequence) Tj
+T*
+() Tj
+T*
+(##Email #1 \(Initial\)) Tj
+T*
+(Subject: Quick next step for your homeowners quote) Tj
+T*
+() Tj
+T*
+(Hi {{first_name}},) Tj
+T*
+() Tj
+T*
+(Thanks for reaching out to Tomlinson & Co for a homeowners quote.) Tj
+T*
+() Tj
+T*
+(You’re close — we just need a few details to prepare your options.) Tj
+T*
+(Reply to this email or use this secure link: {{intake_link}}) Tj
+T*
+() Tj
+T*
+(If easier, we can do it by text in 2–3 minutes.) Tj
+T*
+() Tj
+T*
+(Thanks,) Tj
+T*
+({{agent_name}}) Tj
+T*
+(Tomlinson & Co) Tj
+T*
+({{phone}}) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(##Email #2 \(Follow-up\)) Tj
+T*
+(Subject: Still want homeowners quote options?) Tj
+T*
+() Tj
+T*
+(Hi {{first_name}},) Tj
+T*
+() Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1279 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(Just checking in on your homeowners quote request.) Tj
+T*
+(If you still want options, we can finish your intake quickly here: {{intake_link}}) Tj
+T*
+() Tj
+T*
+(If now isn’t the right time, just let me know and I’ll pause follow-up.) Tj
+T*
+() Tj
+T*
+(Best,) Tj
+T*
+({{agent_name}}) Tj
+T*
+(Tomlinson & Co) Tj
+T*
+({{phone}}) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(##Email #3 \(Final gentle close\)) Tj
+T*
+(Subject: Final follow-up on your homeowners quote request) Tj
+T*
+() Tj
+T*
+(Hi {{first_name}},) Tj
+T*
+() Tj
+T*
+(This is a final courteous follow-up regarding your homeowners quote request.) Tj
+T*
+() Tj
+T*
+(If you want to continue, use this link and we’ll take it from there: {{intake_link}}) Tj
+T*
+(If not, no problem — we can close this out for now.) Tj
+T*
+() Tj
+T*
+(Thank you,) Tj
+T*
+({{agent_name}}) Tj
+T*
+(Tomlinson & Co) Tj
+T*
+({{phone}}) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Suggested Send Cadence) Tj
+T*
+(- Day 0: SMS #1 + Email #1) Tj
+T*
+(- Day 2: SMS #2) Tj
+T*
+(- Day 4: Email #2) Tj
+T*
+(- Day 7: SMS #3 or Email #3 \(not both same day\)) Tj
+T*
+() Tj
+T*
+(#Compliance Notes) Tj
+T*
+(- Respect opt-out immediately.) Tj
+T*
+(- Enforce quiet hours before all sends.) Tj
+T*
+(- Do not send after explicit “not interested” response.) Tj
+ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000123 00000 n 
+0000000193 00000 n 
+0000000319 00000 n 
+0000002101 00000 n 
+0000002227 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+3558
+%%EOF

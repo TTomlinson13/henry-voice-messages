@@ -1,0 +1,11 @@
+pilot_id,account_name,assigned_owner,source_channel,line_of_business,legal_name,dba_name,fein,contact_name,contact_title,email,phone,mailing_address,operations_description,naics_code,years_in_business,annual_revenue,payroll_total,employee_count,requested_effective_date,prior_carrier,prior_premium,loss_5yr_summary,quote_ready_required_fields_complete,critical_conflicts_present,mapping_confidence_score,exception_count,exception_codes,maria_review_status,maria_notes,final_status,created_at,updated_at
+PILOT-001,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PILOT-002,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PILOT-003,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PILOT-004,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PILOT-005,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PILOT-006,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PILOT-007,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PILOT-008,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PILOT-009,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PILOT-010,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

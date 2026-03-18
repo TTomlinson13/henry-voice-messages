@@ -1,0 +1,20 @@
+Hi Maria,
+
+Good morning — quick follow-up to kick off the ACORD 125 pilot today.
+
+Proposed start items:
+1) Confirm required vs optional fields for Quote-Ready
+2) Confirm Quote-Ready gate rules (what blocks progression)
+3) Lock first 10 pilot submissions
+
+Execution flow:
+- Confirm dictionary
+- Approve pilot files
+- Run validation + mapping (v0.1)
+- Route exceptions
+- Score pilot (completeness, confidence, correction time)
+
+If you’re good, we can start immediately this morning.
+
+Thanks,
+Todd + Henry

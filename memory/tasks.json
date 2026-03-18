@@ -1,0 +1,82 @@
+[
+  {
+    "id": "task_exa_lane_162945",
+    "title": "Stand up Exa trial lane for research workflows",
+    "notes": "Set EXA_API_KEY, run 10-query benchmark, score latency+quality, and decide default research lane.",
+    "tags": [
+      "exa",
+      "research",
+      "automation"
+    ],
+    "owner": "Henry",
+    "dueDate": "2026-02-17",
+    "status": "done",
+    "priority": "high",
+    "createdAt": "2026-02-16T16:29:45Z",
+    "updatedAt": "2026-02-18T15:02:31.617Z"
+  },
+  {
+    "id": "task_8281a6ae",
+    "title": "Kick off ACORD 125 prototype scope with Maria",
+    "notes": "Confirm required field dictionary, quote-ready minimums, and first 10 pilot submissions for ACORD v1.",
+    "tags": [
+      "acord",
+      "commercial",
+      "priority"
+    ],
+    "owner": "Todd + Maria + Henry",
+    "dueDate": "2026-02-16",
+    "status": "done",
+    "priority": "high",
+    "createdAt": "2026-02-16T13:03:33Z",
+    "updatedAt": "2026-02-18T15:02:31.617Z"
+  },
+  {
+    "id": "task_6e2fe548",
+    "title": "Define Kiro persona and routing spec",
+    "notes": "Finalize Kiro role, model lane, and when to use vs Codex/Gemini/Opus so implementation can start.",
+    "tags": [
+      "kiro",
+      "agents",
+      "blocked"
+    ],
+    "owner": "Todd + Henry",
+    "dueDate": "2026-02-16",
+    "status": "done",
+    "priority": "high",
+    "createdAt": "2026-02-16T13:03:33Z",
+    "updatedAt": "2026-02-18T15:02:31.617Z"
+  },
+  {
+    "id": "task_f8ac39da",
+    "title": "Follow up 8x8 case C5629489 for VCC webhook access",
+    "notes": "Need VCC Configuration Manager URL/role enabled to complete inbound event wiring for +1 407-401-7103.",
+    "tags": [
+      "8x8",
+      "vcc",
+      "webhooks"
+    ],
+    "owner": "Todd + Henry",
+    "dueDate": "",
+    "status": "waiting",
+    "priority": "high",
+    "createdAt": "2026-02-16T13:03:33Z",
+    "updatedAt": "2026-02-18T15:02:31.617Z"
+  },
+  {
+    "id": "task_3c5dda44",
+    "title": "Implement QuoteRUSH lifecycle statuses and transition gates",
+    "notes": "Apply New→Contact Attempted→Engaged→Quote Ready→Proposal Sent→Won/Lost with required fields and SLA colors.",
+    "tags": [
+      "quoterush",
+      "lifecycle",
+      "kanban"
+    ],
+    "owner": "Henry",
+    "dueDate": "2026-02-20",
+    "status": "next",
+    "priority": "medium",
+    "createdAt": "2026-02-16T13:03:33Z",
+    "updatedAt": "2026-02-18T15:02:31.617Z"
+  }
+]

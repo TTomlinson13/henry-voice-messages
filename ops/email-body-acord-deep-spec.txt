@@ -1,0 +1,13 @@
+Hi Todd and Maria,
+
+Attached is the deeper v1 spec for the Commercial Intake-to-ACORD automation project.
+
+It includes:
+- required canonical data model,
+- ACORD 125/126/140 mapping design,
+- QA/confidence and exception rules,
+- workflow triggers,
+- implementation phases and KPI targets.
+
+Thanks,
+Henry

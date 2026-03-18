@@ -1,0 +1,55 @@
+You are Manus, acting as a senior product+engineering execution agent.
+
+Project Name: Insurance Quote Marketplace MVP (Insurify-style)
+Owner: Todd Tomlinson (Tomlinson & Co)
+Primary Goal: Launch a fast quote marketplace MVP in 30 days for FL-first operations.
+
+Context:
+- Keep this project separate from glossaryofinsurance.com and tcpolicy.com.
+- Focus on conversion speed, lead routing, and SLA discipline.
+
+Deliver in this run:
+1) Architecture proposal (frontend/backend/db/auth/analytics)
+2) Build-ready implementation plan (week-by-week)
+3) Data model/schema
+4) API contract draft
+5) UX wireframe outline for funnel + dashboard
+6) QA test plan
+7) Launch checklist
+8) Risk register + mitigations
+
+Technical requirements:
+- Frontend: Next.js + Tailwind
+- Backend: Node (Next API or Nest)
+- DB: PostgreSQL + Prisma
+- Auth: Clerk or Supabase Auth
+- Email notifications: Resend/SendGrid
+- Analytics: GA4 + PostHog
+- Hosting: Vercel + managed Postgres
+
+MVP scope requirements:
+- Public pages: homepage, product pages (auto/home), multi-step quote form, thank-you page
+- Internal pages: login, lead dashboard, routing rules manager, SLA alerts view
+- Lead routing by state + product type
+- Notifications on lead assignment
+- SLA alert if untouched > 15 minutes (configurable)
+
+Required lead fields:
+- name, email, phone, zip/state, product_type
+- source + UTM fields
+
+Output format (strict):
+A) Executive summary (10 bullets max)
+B) System architecture diagram (text/ascii acceptable)
+C) Database schema (tables + fields)
+D) API endpoints and request/response examples
+E) UI page list + component list
+F) 30-day plan with day-by-day milestones
+G) QA test matrix
+H) Launch readiness checklist
+I) Top 10 risks + mitigation actions
+J) Exact next 10 tasks to start tomorrow
+
+Tone:
+- Practical, implementation-oriented, no fluff.
+- Assume this will be handed directly to engineering for build.

@@ -1,0 +1,327 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 4 0 R 6 0 R 8 0 R ] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1889 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(Florida Homeowner Lead Plan) Tj
+T*
+() Tj
+T*
+(#Goal) Tj
+T*
+(Build a repeatable homeowner lead engine using:) Tj
+T*
+(1\) Partner network \(loan officers, realtors, closing agents\)) Tj
+T*
+(2\) Digital inbound \(ads + Canopy link\)) Tj
+T*
+(3\) AI-assisted qualification + follow-up) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#1\) Lead Engine Structure) Tj
+T*
+() Tj
+T*
+(##Channel A: Partner Referrals \(highest intent\)) Tj
+T*
+(- Source: loan officer/realtor/closing agent database) Tj
+T*
+(- Offer: faster quote turnaround + smoother closings + policy review support) Tj
+T*
+(- Conversion path: partner-specific Canopy link) Tj
+T*
+() Tj
+T*
+(##Channel B: Homeowner Direct Response) Tj
+T*
+(- Meta/Google local ads targeting FL homeowners) Tj
+T*
+(- Message: rate pressure + renewal review + local expert) Tj
+T*
+(- Conversion path: public Canopy link) Tj
+T*
+() Tj
+T*
+(##Channel C: Reactivation / Renewal Push) Tj
+T*
+(- Existing house-file + referral audiences) Tj
+T*
+(- Message: “shop before renewal”) Tj
+T*
+(- Conversion path: Canopy intake + priority callback SLA) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#2\) 30-Day Rollout) Tj
+T*
+() Tj
+T*
+(##Week 1: Foundation) Tj
+T*
+(1. Segment partner list into A/B/C tiers) Tj
+T*
+(2. Create 3 outreach scripts \(LO / realtor / closing agent\)) Tj
+T*
+(3. Set unique tracking links \(UTM tags\) per partner/channel) Tj
+T*
+(4. Define SLA:) Tj
+T*
+(   - New lead touched in 10–15 min) Tj
+T*
+(   - Escalate at 30 min) Tj
+T*
+() Tj
+T*
+(##Week 2: Launch Partner Sprint) Tj
+T*
+(5. Contact first 50 A-tier partners) Tj
+T*
+(6. Book 10–15 intro calls) Tj
+T*
+(7. Offer co-branded intake link + “fast quote support” promise) Tj
+T*
+(8. Start weekly partner follow-up cadence) Tj
+T*
+() Tj
+T*
+(##Week 3: Launch Digital Ads) Tj
+T*
+(9. Launch 3 ad sets \(Renewal, Overpaying, New Homeowner\)) Tj
+T*
+(10. Drive all traffic to Canopy link) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1807 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(11. Add retargeting for non-converters) Tj
+T*
+(12. Begin daily ad + lead quality review) Tj
+T*
+() Tj
+T*
+(##Week 4: Optimize) Tj
+T*
+(13. Double down on top converting partner types) Tj
+T*
+(14. Pause weak ad creatives, scale best 2–3) Tj
+T*
+(15. Tighten scripts based on objection patterns) Tj
+T*
+(16. Publish weekly scorecard + next actions) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#3\) AI Agent Roles \(Operational\)) Tj
+T*
+() Tj
+T*
+(##Agent 1: Partner Research/Scoring) Tj
+T*
+(- Ranks partners by fit + likely volume) Tj
+T*
+(- Outputs priority outreach queue daily) Tj
+T*
+() Tj
+T*
+(##Agent 2: Outreach Composer) Tj
+T*
+(- Generates personalized messages by persona) Tj
+T*
+(- Maintains script variants for A/B testing) Tj
+T*
+() Tj
+T*
+(##Agent 3: Follow-up Orchestrator) Tj
+T*
+(- Tracks no-response, replied, meeting-booked) Tj
+T*
+(- Triggers next-touch reminders) Tj
+T*
+() Tj
+T*
+(##Agent 4: Lead Ops Analyst) Tj
+T*
+(- Reviews lead speed, quality, and close signals) Tj
+T*
+(- Flags bottlenecks and recommends fixes weekly) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#4\) Script Starters \(Short\)) Tj
+T*
+() Tj
+T*
+(##Loan Officer) Tj
+T*
+(“Hey [Name], we help Florida buyers close faster by handling homeowners quotes quickly and) Tj
+T*
+(cleanly. Want a simple referral workflow with same-day response?”) Tj
+T*
+() Tj
+T*
+(##Realtor) Tj
+T*
+(“Hey [Name], we help your buyers avoid last-minute insurance issues by giving quick, reliable) Tj
+T*
+(homeowner options. Want a streamlined referral process?”) Tj
+T*
+() Tj
+T*
+(##Closing Agent) Tj
+T*
+(“Hey [Name], we support smoother closings with fast insurance turnaround and clear) Tj
+T*
+(communication. Open to a quick intro on how we can support your files?”) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#5\) KPI Scorecard \(Weekly\)) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 1193 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+() Tj
+T*
+(- New partner outreaches) Tj
+T*
+(- Partner replies) Tj
+T*
+(- Intro calls booked) Tj
+T*
+(- Active referring partners) Tj
+T*
+(- Partner-sourced leads) Tj
+T*
+(- Lead-to-quote %) Tj
+T*
+(- Quote-to-bind %) Tj
+T*
+(- Median first-response time) Tj
+T*
+(- Cost per lead \(digital\)) Tj
+T*
+(- Revenue per lead) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#6\) Compliance Guardrails \(Critical\)) Tj
+T*
+() Tj
+T*
+(- Respect DNC/TCPA/calling windows) Tj
+T*
+(- Use consent-first outreach where required) Tj
+T*
+(- Maintain source + timestamp audit trail) Tj
+T*
+(- Suppression lists always on) Tj
+T*
+(- No aggressive scraping against site terms) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#7\) Immediate Next 10 Actions) Tj
+T*
+() Tj
+T*
+(1. Export partner list and tag LO/Realtor/Closing) Tj
+T*
+(2. Rank top 50 A-tier targets) Tj
+T*
+(3. Finalize 3 outreach templates) Tj
+T*
+(4. Create tracking links by channel) Tj
+T*
+(5. Set SLA alerts in workflow) Tj
+T*
+(6. Launch first outreach batch \(20/day\)) Tj
+T*
+(7. Prepare 3 ad creatives + 3 headlines each) Tj
+T*
+(8. Launch FL homeowner ad pilot) Tj
+T*
+(9. Start daily 15-min lead standup) Tj
+T*
+(10. Publish first weekly scorecard) Tj
+ET
+endstream
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000129 00000 n 
+0000000199 00000 n 
+0000000325 00000 n 
+0000002266 00000 n 
+0000002392 00000 n 
+0000004251 00000 n 
+0000004377 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+5622
+%%EOF

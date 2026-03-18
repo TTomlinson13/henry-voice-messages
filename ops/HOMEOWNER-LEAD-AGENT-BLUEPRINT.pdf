@@ -1,0 +1,523 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 4 0 R 6 0 R 8 0 R 10 0 R 12 0 R ] /Count 5 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1538 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(Homeowner Lead Agent Blueprint v1) Tj
+T*
+() Tj
+T*
+(#Objective) Tj
+T*
+(Automate lead engagement from first touch to proposal-ready status, while keeping outreach) Tj
+T*
+(compliant, human, and non-annoying.) Tj
+T*
+() Tj
+T*
+(#Stack Context) Tj
+T*
+(- Intake: Canopy Connect) Tj
+T*
+(- Agency workflow/quoting: QuoteRUSH \(+ Client Dynamics\)) Tj
+T*
+(- Messaging/orchestration: OpenClaw agents + cron + channel routing) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#1\) Agent Architecture \(5-agent model\)) Tj
+T*
+() Tj
+T*
+(##A\) Lead Intake Agent) Tj
+T*
+(Role: Start conversation and gather quote-ready data.) Tj
+T*
+() Tj
+T*
+(Triggers:) Tj
+T*
+(- New lead from Canopy / ad / partner / expired database import) Tj
+T*
+() Tj
+T*
+(Actions:) Tj
+T*
+(- Send first-touch SMS/email) Tj
+T*
+(- Ask structured questions in sequence) Tj
+T*
+(- Confirm missing fields) Tj
+T*
+(- Mark lead `quote_ready` when minimum data complete) Tj
+T*
+() Tj
+T*
+(Output:) Tj
+T*
+(- Structured lead payload + status update in QuoteRUSH/CRM) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(##B\) Follow-Up Agent) Tj
+T*
+(Role: Persistent but polite follow-up until engagement or timeout.) Tj
+T*
+() Tj
+T*
+(Triggers:) Tj
+T*
+(- Lead in `new`, `incomplete`, `quoted-not-bound`) Tj
+T*
+() Tj
+T*
+(Actions:) Tj
+T*
+(- Execute cadence \(below\)) Tj
+T*
+(- Personalize by source \(partner/ad/reactivation\)) Tj
+T*
+(- Pause/stop on response, bind, opt-out) Tj
+T*
+() Tj
+T*
+(Output:) Tj
+T*
+(- Next-touch task, engagement score, do-not-contact flags) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1347 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(##C\) Proposal Orchestration Agent) Tj
+T*
+(Role: Move quote-ready leads to proposal quickly.) Tj
+T*
+() Tj
+T*
+(Triggers:) Tj
+T*
+(- Lead status changes to `quote_ready`) Tj
+T*
+(- Producer task overdue) Tj
+T*
+() Tj
+T*
+(Actions:) Tj
+T*
+(- Notify assigned producer/CSR) Tj
+T*
+(- Enforce SLA timers) Tj
+T*
+(- Remind until quote sent) Tj
+T*
+(- Trigger post-quote follow-up sequence) Tj
+T*
+() Tj
+T*
+(Output:) Tj
+T*
+(- Reduced lead-to-quote time, fewer stalled files) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(##D\) Compliance Guardrail Agent) Tj
+T*
+(Role: Keep all outreach compliant and safe.) Tj
+T*
+() Tj
+T*
+(Triggers:) Tj
+T*
+(- Before every outbound message/call task) Tj
+T*
+() Tj
+T*
+(Actions:) Tj
+T*
+(- Validate DNC/TCPA/opt-out/quiet-hour rules) Tj
+T*
+(- Block disallowed channel) Tj
+T*
+(- Log consent and suppression events) Tj
+T*
+() Tj
+T*
+(Output:) Tj
+T*
+(- Pass/block decision + audit log) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(##E\) Pipeline Coach Agent) Tj
+T*
+(Role: Management visibility + next best actions.) Tj
+T*
+() Tj
+T*
+(Triggers:) Tj
+T*
+(- Daily 8 AM + mid-day + end-of-day) Tj
+T*
+() Tj
+T*
+(Actions:) Tj
+T*
+(- Summarize stuck leads) Tj
+T*
+(- Rank top opportunities) Tj
+T*
+(- Recommend today’s top actions \(Todd + team + Henry\)) Tj
+T*
+() Tj
+T*
+(Output:) Tj
+T*
+(- Clear daily execution priorities) Tj
+T*
+() Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 1309 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(---) Tj
+T*
+() Tj
+T*
+(#2\) Lead Lifecycle States) Tj
+T*
+(1. `new`) Tj
+T*
+(2. `contact_attempted`) Tj
+T*
+(3. `engaged`) Tj
+T*
+(4. `incomplete_data`) Tj
+T*
+(5. `quote_ready`) Tj
+T*
+(6. `quoted`) Tj
+T*
+(7. `followup_post_quote`) Tj
+T*
+(8. `bound`) Tj
+T*
+(9. `lost`) Tj
+T*
+(10. `do_not_contact`) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#3\) Minimum Data Required for “Quote Ready”) Tj
+T*
+(- Full name) Tj
+T*
+(- Property address) Tj
+T*
+(- Email + mobile) Tj
+T*
+(- DOB) Tj
+T*
+(- Prior/current carrier info \(if available\)) Tj
+T*
+(- Coverage intent / occupancy basics) Tj
+T*
+(- Preferred effective date) Tj
+T*
+() Tj
+T*
+(\(Adjust by line/state as needed.\)) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#4\) Follow-Up Cadence \(non-bothersome default\)) Tj
+T*
+() Tj
+T*
+(##If no response:) Tj
+T*
+(- T0 \(immediate\): Intro + quick value + link) Tj
+T*
+(- T+1 day: gentle reminder) Tj
+T*
+(- T+3 days: value message \(coverage/rate angle\)) Tj
+T*
+(- T+7 days: “still want help?” checkpoint) Tj
+T*
+(- T+14 days: final nudge + archive option) Tj
+T*
+() Tj
+T*
+(##Rules:) Tj
+T*
+(- Max 5 touches in 14 days) Tj
+T*
+(- Stop immediately on opt-out) Tj
+T*
+(- Pause when engaged) Tj
+T*
+(- Resume only if lead goes cold after X days) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#5\) Message Policy) Tj
+T*
+() Tj
+ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 11 0 R >>
+endobj
+11 0 obj
+<< /Length 1341 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(##Tone) Tj
+T*
+(- Helpful, local, concise) Tj
+T*
+(- No pressure language) Tj
+T*
+(- One CTA per message) Tj
+T*
+() Tj
+T*
+(##Channel order) Tj
+T*
+(1\) SMS \(fastest response\)) Tj
+T*
+(2\) Email \(detail/supporting info\)) Tj
+T*
+(3\) Human call task \(if high intent or quote-ready stall\)) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#6\) Compliance Controls \(must-have\)) Tj
+T*
+(- Quiet hours by lead timezone) Tj
+T*
+(- DNC suppression list check pre-send) Tj
+T*
+(- TCPA consent check for SMS/calls) Tj
+T*
+(- Auto-honor STOP/UNSUBSCRIBE) Tj
+T*
+(- Full outbound/inbound event logging) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#7\) Scoring Model \(simple v1\)) Tj
+T*
+(- +3 responds to message) Tj
+T*
+(- +4 completes key intake fields) Tj
+T*
+(- +5 requests quote today) Tj
+T*
+(- -3 no response after 3 touches) Tj
+T*
+(- -5 explicit not interested) Tj
+T*
+(- -10 opt-out) Tj
+T*
+() Tj
+T*
+(Use score to prioritize producer effort.) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#8\) KPI Dashboard \(weekly\)) Tj
+T*
+(- New leads) Tj
+T*
+(- Contact rate) Tj
+T*
+(- Response rate) Tj
+T*
+(- Quote-ready rate) Tj
+T*
+(- Lead-to-quote time) Tj
+T*
+(- Quote-to-bind rate) Tj
+T*
+(- Unsubscribe rate) Tj
+T*
+(- Overdue follow-up count) Tj
+T*
+(- Revenue per lead source) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#9\) 14-Day Implementation Plan) Tj
+T*
+() Tj
+ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 13 0 R >>
+endobj
+13 0 obj
+<< /Length 856 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(##Days 1–3) Tj
+T*
+(- Define fields + state machine) Tj
+T*
+(- Build compliance checks) Tj
+T*
+(- Build first-touch templates) Tj
+T*
+() Tj
+T*
+(##Days 4–7) Tj
+T*
+(- Enable intake + follow-up agents) Tj
+T*
+(- Connect status updates to QuoteRUSH) Tj
+T*
+(- Start pilot with one source \(e.g., ad leads\)) Tj
+T*
+() Tj
+T*
+(##Days 8–10) Tj
+T*
+(- Add proposal orchestration + SLA reminders) Tj
+T*
+(- Activate daily pipeline coach summary) Tj
+T*
+() Tj
+T*
+(##Days 11–14) Tj
+T*
+(- Tune cadence based on response/opt-out) Tj
+T*
+(- Expand to partner + expired lead segments) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#10\) Human-in-the-loop points) Tj
+T*
+(- Producer approval before final proposal send \(optional policy\)) Tj
+T*
+(- Manual takeover trigger on high-value leads) Tj
+T*
+(- Escalation queue for confused/complex replies) Tj
+ET
+endstream
+endobj
+xref
+0 14
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000143 00000 n 
+0000000213 00000 n 
+0000000339 00000 n 
+0000001929 00000 n 
+0000002055 00000 n 
+0000003454 00000 n 
+0000003580 00000 n 
+0000004941 00000 n 
+0000005069 00000 n 
+0000006463 00000 n 
+0000006591 00000 n 
+trailer
+<< /Size 14 /Root 1 0 R >>
+startxref
+7499
+%%EOF

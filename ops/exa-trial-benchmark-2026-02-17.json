@@ -1,0 +1,91 @@
+{
+  "provider": "Exa",
+  "date_utc": "2026-02-17 14:22:18 UTC",
+  "queries_tested": 10,
+  "avg_latency_ms": 1109.9,
+  "median_latency_ms": 1095.7,
+  "avg_quality_proxy_5": 4.8,
+  "rows": [
+    {
+      "query": "Top Florida homeowners insurance ad competitors this week",
+      "status": 200,
+      "latency_ms": 1508.5,
+      "results": 5,
+      "unique_domains": 4,
+      "quality_proxy_5": 5
+    },
+    {
+      "query": "paylessfunding.net reviews complaints credibility",
+      "status": 200,
+      "latency_ms": 1166.9,
+      "results": 5,
+      "unique_domains": 4,
+      "quality_proxy_5": 5
+    },
+    {
+      "query": "berkmanfinancial.com lender or broker",
+      "status": 200,
+      "latency_ms": 869.1,
+      "results": 5,
+      "unique_domains": 3,
+      "quality_proxy_5": 5
+    },
+    {
+      "query": "nationwideadvance.com funding terms reviews",
+      "status": 200,
+      "latency_ms": 850.8,
+      "results": 5,
+      "unique_domains": 3,
+      "quality_proxy_5": 4
+    },
+    {
+      "query": "Irving Fund business loan reviews",
+      "status": 200,
+      "latency_ms": 1091.8,
+      "results": 5,
+      "unique_domains": 5,
+      "quality_proxy_5": 5
+    },
+    {
+      "query": "Florida property insurance market 2026 reforms",
+      "status": 200,
+      "latency_ms": 892.0,
+      "results": 5,
+      "unique_domains": 5,
+      "quality_proxy_5": 5
+    },
+    {
+      "query": "Client Dynamics QuoteRUSH integration updates",
+      "status": 200,
+      "latency_ms": 1660.2,
+      "results": 5,
+      "unique_domains": 5,
+      "quality_proxy_5": 5
+    },
+    {
+      "query": "8x8 VCC license webhook configuration manager",
+      "status": 200,
+      "latency_ms": 1187.1,
+      "results": 5,
+      "unique_domains": 3,
+      "quality_proxy_5": 5
+    },
+    {
+      "query": "Private flood insurance MGA Florida opportunities",
+      "status": 200,
+      "latency_ms": 1099.5,
+      "results": 5,
+      "unique_domains": 5,
+      "quality_proxy_5": 5
+    },
+    {
+      "query": "Cleetus McFarland latest YouTube uploads",
+      "status": 200,
+      "latency_ms": 773.0,
+      "results": 5,
+      "unique_domains": 1,
+      "quality_proxy_5": 4
+    }
+  ],
+  "decision": "GO (trial lane active)"
+}

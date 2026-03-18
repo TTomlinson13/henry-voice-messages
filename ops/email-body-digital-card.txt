@@ -1,0 +1,10 @@
+Hi Todd,
+
+Attached is your Digital Business Card v1 package.
+
+Contents:
+- index.html (mobile-friendly digital card)
+- Todd-Tomlinson.vcf (save contact card)
+
+Thanks,
+Henry

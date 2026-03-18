@@ -1,0 +1,11 @@
+pilot_id,account_name,record_quality_class,mapping_run_timestamp,required_fields_complete_pct,mapping_confidence_score,auto_mapped_fields_count,manual_corrections_count,exception_count,exception_codes,quote_ready_gate_pass,maria_review_status,review_time_minutes,final_disposition,notes
+PILOT-001,,,,,,,,,,,,,,
+PILOT-002,,,,,,,,,,,,,,
+PILOT-003,,,,,,,,,,,,,,
+PILOT-004,,,,,,,,,,,,,,
+PILOT-005,,,,,,,,,,,,,,
+PILOT-006,,,,,,,,,,,,,,
+PILOT-007,,,,,,,,,,,,,,
+PILOT-008,,,,,,,,,,,,,,
+PILOT-009,,,,,,,,,,,,,,
+PILOT-010,,,,,,,,,,,,,,

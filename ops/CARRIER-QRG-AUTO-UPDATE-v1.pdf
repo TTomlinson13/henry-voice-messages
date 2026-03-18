@@ -1,0 +1,499 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 4 0 R 6 0 R 8 0 R 10 0 R 12 0 R ] /Count 5 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1637 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(Carrier QRG Auto-Update v1 Runbook) Tj
+T*
+() Tj
+T*
+(#Objective) Tj
+T*
+(Automatically detect and ingest carrier Quick Reference Guide \(QRG\) updates into Google Drive) Tj
+T*
+(without manual re-upload, while preserving compliance, quality control, and auditability.) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#1\) Scope) Tj
+T*
+(- In scope: Carrier QRG PDFs/docs, underwriting bulletins, appetite/reference docs tied to) Tj
+T*
+(carrier access workflows.) Tj
+T*
+(- Out of scope \(v1\): Deep policy form parsing, OCR-heavy scanned images with poor quality, non-) Tj
+T*
+(authorized source scraping.) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#2\) Source of Truth) Tj
+T*
+(Use Google Drive as canonical storage.) Tj
+T*
+() Tj
+T*
+(##Folder Standard) Tj
+T*
+(`/Carriers/{CarrierName}/QRG/`) Tj
+T*
+() Tj
+T*
+(##Naming Convention) Tj
+T*
+(`{CarrierName}-QRG-{YYYY-MM-DD}-v{N}.pdf`) Tj
+T*
+() Tj
+T*
+(##Required Metadata \(stored in index sheet + file description\)) Tj
+T*
+(- Carrier name) Tj
+T*
+(- Source URL) Tj
+T*
+(- Last checked timestamp) Tj
+T*
+(- Last changed timestamp) Tj
+T*
+(- Previous hash) Tj
+T*
+(- Current hash) Tj
+T*
+(- Change summary) Tj
+T*
+(- Confidence score \(high/medium/low\)) Tj
+T*
+(- Approval status \(auto-approved/manual-approved/rejected\)) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#3\) Architecture \(v1\)) Tj
+T*
+() Tj
+T*
+(#A\) Carrier Registry) Tj
+T*
+(Single registry table \(Google Sheet or JSON\) with one row per carrier source.) Tj
+T*
+() Tj
+T*
+(Fields:) Tj
+T*
+(- `carrier_name`) Tj
+T*
+(- `source_type` \(public_url | portal_url | drive_link\)) Tj
+T*
+(- `source_url`) Tj
+T*
+(- `auth_required` \(yes/no\)) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1801 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(- `check_frequency` \(daily | mon-thu | weekly\)) Tj
+T*
+(- `destination_drive_folder_id`) Tj
+T*
+(- `parser_type` \(pdf_text | html_text | mixed\)) Tj
+T*
+(- `auto_approve_threshold` \(e.g., 0.85\)) Tj
+T*
+(- `owner`) Tj
+T*
+(- `enabled`) Tj
+T*
+() Tj
+T*
+(#B\) Watcher Agent \(scheduled\)) Tj
+T*
+(Runs by cron and loops enabled rows:) Tj
+T*
+(1. Pull source content) Tj
+T*
+(2. Normalize text) Tj
+T*
+(3. Compute checksum/hash) Tj
+T*
+(4. Compare with last known hash) Tj
+T*
+(5. If unchanged: log + exit row) Tj
+T*
+(6. If changed: save new file, run diff summary, score confidence) Tj
+T*
+(7. Route by approval rules) Tj
+T*
+() Tj
+T*
+(#C\) Diff + QA Agent) Tj
+T*
+(- Extract text from previous and current versions) Tj
+T*
+(- Produce concise “What changed” bullets) Tj
+T*
+(- Score confidence:) Tj
+T*
+(  - High: structure and key sections matched) Tj
+T*
+(  - Medium: partial extraction or moderate structural changes) Tj
+T*
+(  - Low: extraction noise, access issues, or major ambiguity) Tj
+T*
+() Tj
+T*
+(#D\) Approval Router) Tj
+T*
+(- If confidence >= threshold and source is trusted: auto-approve) Tj
+T*
+(- Else: send to Todd for approval \(Telegram/email\)) Tj
+T*
+() Tj
+T*
+(#E\) Notification Layer) Tj
+T*
+(- Daily digest of changed carriers) Tj
+T*
+(- Immediate alert for high-impact changes \(major appetite/underwriting updates\)) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#4\) Scheduling) Tj
+T*
+() Tj
+T*
+(##Default cadence) Tj
+T*
+(- Tier 1 carriers \(top volume\): daily 7:15 AM ET) Tj
+T*
+(- Tier 2 carriers: Mon/Thu 7:30 AM ET) Tj
+T*
+(- Tier 3 carriers: weekly Fri 8:00 AM ET) Tj
+T*
+() Tj
+T*
+(##Retry policy) Tj
+T*
+(- Retry failed source fetch up to 3 attempts with backoff) Tj
+T*
+(- After 3 failures, mark row `needs_attention` and notify owner) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 1661 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(#5\) Approval Rules) Tj
+T*
+() Tj
+T*
+(#Auto-approve when all are true:) Tj
+T*
+(- Source is trusted and stable) Tj
+T*
+(- Confidence >= threshold) Tj
+T*
+(- Change type is minor/moderate \(format refresh, section updates\)) Tj
+T*
+() Tj
+T*
+(#Manual approval required when any are true:) Tj
+T*
+(- Confidence low/medium below threshold) Tj
+T*
+(- Auth/session anomaly) Tj
+T*
+(- Large structure change \(possible parsing mismatch\)) Tj
+T*
+(- New source/domain not previously approved) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#6\) Security & Compliance Guardrails) Tj
+T*
+(- Only monitor sources you are authorized to access.) Tj
+T*
+(- Store credentials in secure vault; never hardcode in scripts.) Tj
+T*
+(- Enforce least privilege for agent service account.) Tj
+T*
+(- Log every access/update event with timestamp and actor.) Tj
+T*
+(- Preserve previous versions for rollback/comparison.) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#7\) Google Drive + Index Design) Tj
+T*
+() Tj
+T*
+(#Drive) Tj
+T*
+(- Canonical folder per carrier) Tj
+T*
+(- Archive subfolder optional: `/Archive/`) Tj
+T*
+() Tj
+T*
+(#Index Sheet tabs) Tj
+T*
+(1. Registry \(carrier source config\)) Tj
+T*
+(2. Runs \(each check run + outcome\)) Tj
+T*
+(3. Changes \(only changed docs + summaries\)) Tj
+T*
+(4. Approvals \(pending/approved/rejected\)) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#8\) OpenClaw Cron Plan \(v1\)) Tj
+T*
+() Tj
+T*
+(#Job 1: `carrier-qrg-watch-daily`) Tj
+T*
+(- Runs Tier 1 registry rows) Tj
+T*
+(- Sends summary and approval-needed queue) Tj
+T*
+() Tj
+T*
+(#Job 2: `carrier-qrg-watch-mon-thu`) Tj
+T*
+(- Runs Tier 2 rows) Tj
+T*
+() Tj
+T*
+(#Job 3: `carrier-qrg-watch-weekly`) Tj
+ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 11 0 R >>
+endobj
+11 0 obj
+<< /Length 1666 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(- Runs Tier 3 rows) Tj
+T*
+() Tj
+T*
+(#Job 4: `carrier-qrg-approval-digest`) Tj
+T*
+(- Daily digest of pending approvals + stale failures) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#9\) Suggested Agent Responsibilities \(Tool Split\)) Tj
+T*
+(- OpenClaw: scheduling, orchestration, notifications, run logging) Tj
+T*
+(- Manus: extraction + normalization + diff quality improvements) Tj
+T*
+(- Lindy: approval workflow \(approve/reject\), reminder follow-ups) Tj
+T*
+(- Loveable \(optional\): dashboard for registry, run status, and approvals) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#10\) v1 Deliverables Checklist) Tj
+T*
+(- [ ] Carrier registry created) Tj
+T*
+(- [ ] Drive folder map completed) Tj
+T*
+(- [ ] Hash/diff engine configured) Tj
+T*
+(- [ ] Approval thresholds defined) Tj
+T*
+(- [ ] Cron jobs created) Tj
+T*
+(- [ ] Daily digest enabled) Tj
+T*
+(- [ ] Failure alerting enabled) Tj
+T*
+(- [ ] Pilot with 5 carriers completed) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#11\) Pilot Rollout \(first 14 days\)) Tj
+T*
+() Tj
+T*
+(##Days 1–3) Tj
+T*
+(- Configure 5 highest-priority carriers) Tj
+T*
+(- Validate source access + parser behavior) Tj
+T*
+() Tj
+T*
+(##Days 4–7) Tj
+T*
+(- Enable auto-detect + diff summaries) Tj
+T*
+(- Keep approvals manual for all changes) Tj
+T*
+() Tj
+T*
+(##Days 8–14) Tj
+T*
+(- Turn on auto-approve for high-confidence trusted sources) Tj
+T*
+(- Track false positives/negatives and tune thresholds) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#12\) Success Metrics) Tj
+T*
+(- % carriers checked on schedule) Tj
+T*
+(- % changes detected correctly) Tj
+T*
+(- False positive rate) Tj
+T*
+(- Mean time from source change -> Drive update) Tj
+ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 13 0 R >>
+endobj
+13 0 obj
+<< /Length 531 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(- Manual approval load per week) Tj
+T*
+(- Failed run rate) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#13\) Immediate Next Actions \(for Todd + Henry\)) Tj
+T*
+(1. Select first 5 carriers for pilot.) Tj
+T*
+(2. Create/confirm Drive folder IDs for each.) Tj
+T*
+(3. Build initial registry sheet \(carrier, source URL, cadence, owner\).) Tj
+T*
+(4. Define confidence threshold \(start at 0.85\).) Tj
+T*
+(5. Decide approval channel \(Telegram + daily email digest\).) Tj
+T*
+(6. Launch 2-week pilot and tune.) Tj
+ET
+endstream
+endobj
+xref
+0 14
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000143 00000 n 
+0000000213 00000 n 
+0000000339 00000 n 
+0000002028 00000 n 
+0000002154 00000 n 
+0000004007 00000 n 
+0000004133 00000 n 
+0000005846 00000 n 
+0000005974 00000 n 
+0000007693 00000 n 
+0000007821 00000 n 
+trailer
+<< /Size 14 /Root 1 0 R >>
+startxref
+8404
+%%EOF

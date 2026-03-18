@@ -1,0 +1,447 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 4 0 R 6 0 R 8 0 R 10 0 R ] /Count 4 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1314 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(QuoteRUSH Lifecycle Map \(Homeowner Pilot\)) Tj
+T*
+() Tj
+T*
+(#Objective) Tj
+T*
+(Standardize lead progression in QuoteRUSH so automation, producers, and reporting all use the) Tj
+T*
+(same status logic.) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Lifecycle Stages) Tj
+T*
+(1. New) Tj
+T*
+(2. Contact Attempted) Tj
+T*
+(3. Engaged) Tj
+T*
+(4. Quote Ready) Tj
+T*
+(5. Proposal Sent) Tj
+T*
+(6. Won / Lost) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Stage Definitions + Entry Criteria) Tj
+T*
+() Tj
+T*
+(#1\) New) Tj
+T*
+(Definition: Lead created/imported; no outbound attempt yet.) Tj
+T*
+() Tj
+T*
+(Enter when:) Tj
+T*
+(- New lead arrives from Canopy/form/manual import.) Tj
+T*
+() Tj
+T*
+(Required fields on entry:) Tj
+T*
+(- Lead name) Tj
+T*
+(- Primary contact method \(phone/email\)) Tj
+T*
+(- Source/campaign) Tj
+T*
+(- Assigned owner) Tj
+T*
+() Tj
+T*
+(Auto-actions:) Tj
+T*
+(- Create first-touch task) Tj
+T*
+(- Set SLA timer \(first contact within 15–30 min during business hours\)) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#2\) Contact Attempted) Tj
+T*
+(Definition: At least one outbound attempt made; no two-way response yet.) Tj
+T*
+() Tj
+T*
+(Enter when:) Tj
+T*
+(- SMS/email/call attempt logged.) Tj
+T*
+() Tj
+T*
+(Required fields:) Tj
+T*
+(- Attempt timestamp) Tj
+T*
+(- Channel used) Tj
+T*
+(- Attempt count) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1367 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+() Tj
+T*
+(Auto-actions:) Tj
+T*
+(- Schedule next follow-up based on cadence) Tj
+T*
+(- Suppress if opt-out or DNC flag) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#3\) Engaged) Tj
+T*
+(Definition: Lead responds or active conversation starts.) Tj
+T*
+() Tj
+T*
+(Enter when:) Tj
+T*
+(- Reply received \(SMS/email/call\) OR) Tj
+T*
+(- Appointment/meeting event set) Tj
+T*
+() Tj
+T*
+(Required fields:) Tj
+T*
+(- Engagement channel) Tj
+T*
+(- Last response timestamp) Tj
+T*
+(- Next action owner/date) Tj
+T*
+() Tj
+T*
+(Auto-actions:) Tj
+T*
+(- Pause generic drip sequence) Tj
+T*
+(- Trigger intake completion workflow) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#4\) Quote Ready) Tj
+T*
+(Definition: Required underwriting/intake fields complete for quoting.) Tj
+T*
+() Tj
+T*
+(Enter when \(all true\):) Tj
+T*
+(- Required Canopy intake fields complete) Tj
+T*
+(- Contact info validated) Tj
+T*
+(- Target policy details captured) Tj
+T*
+() Tj
+T*
+(Required fields \(minimum\):) Tj
+T*
+(- Property address) Tj
+T*
+(- Current carrier \(if known\)) Tj
+T*
+(- Renewal/effective date) Tj
+T*
+(- Any major risk notes \(roof/updates/claims context\)) Tj
+T*
+() Tj
+T*
+(Auto-actions:) Tj
+T*
+(- Create producer quoting task) Tj
+T*
+(- Start quote SLA timer) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#5\) Proposal Sent) Tj
+T*
+(Definition: Formal quote/proposal delivered to prospect.) Tj
+T*
+() Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 1658 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(Enter when:) Tj
+T*
+(- Proposal/quote package sent via approved channel.) Tj
+T*
+() Tj
+T*
+(Required fields:) Tj
+T*
+(- Proposal sent date/time) Tj
+T*
+(- Premium/option summary \(or proposal reference\)) Tj
+T*
+(- Follow-up due date) Tj
+T*
+() Tj
+T*
+(Auto-actions:) Tj
+T*
+(- Schedule proposal follow-up sequence) Tj
+T*
+(- Notify owner at stale threshold \(e.g., no response 48h\)) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#6\) Won / Lost) Tj
+T*
+(Won Definition: Policy bound/accepted.) Tj
+T*
+(Lost Definition: Deal closed-lost \(with reason\).) Tj
+T*
+() Tj
+T*
+(Enter Won when:) Tj
+T*
+(- Bind confirmation recorded.) Tj
+T*
+() Tj
+T*
+(Enter Lost when:) Tj
+T*
+(- Explicit decline, no-fit, unable to reach after full sequence, or competitor win.) Tj
+T*
+() Tj
+T*
+(Required fields:) Tj
+T*
+(- Outcome date) Tj
+T*
+(- Lost reason code \(if Lost\)) Tj
+T*
+(- Bound premium \(if Won\)) Tj
+T*
+() Tj
+T*
+(Auto-actions:) Tj
+T*
+(- Won: trigger onboarding/checklist) Tj
+T*
+(- Lost: move to nurture/reactivation pool if eligible) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Transition Rules \(Guardrails\)) Tj
+T*
+(- New -> Contact Attempted: only after outbound event logged.) Tj
+T*
+(- Contact Attempted -> Engaged: only on two-way interaction.) Tj
+T*
+(- Engaged -> Quote Ready: only when required intake complete.) Tj
+T*
+(- Quote Ready -> Proposal Sent: only when quote/proposal actually sent.) Tj
+T*
+(- Proposal Sent -> Won/Lost: only with explicit outcome event.) Tj
+T*
+() Tj
+T*
+(Disallowed shortcuts:) Tj
+T*
+(- New -> Quote Ready \(without intake\)) Tj
+T*
+(- Contact Attempted -> Proposal Sent \(without engagement/intake\)) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 11 0 R >>
+endobj
+11 0 obj
+<< /Length 1340 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(#SLA Targets \(Pilot\)) Tj
+T*
+(- First response: <= 30 min \(business hours\)) Tj
+T*
+(- From Engaged -> Quote Ready: same day target) Tj
+T*
+(- From Quote Ready -> Proposal Sent: <= 24h) Tj
+T*
+(- Proposal follow-up: within 24–48h) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Ownership Model) Tj
+T*
+(- Automation owner: first-touch + follow-up attempts) Tj
+T*
+(- CSR/Agent owner: intake completion + data quality) Tj
+T*
+(- Producer owner: quoting/proposal/close) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Required Reason Codes \(Lost\)) Tj
+T*
+(- Price) Tj
+T*
+(- Coverage mismatch) Tj
+T*
+(- No response) Tj
+T*
+(- Timing) Tj
+T*
+(- Not eligible) Tj
+T*
+(- Chose competitor) Tj
+T*
+(- Duplicate/invalid lead) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Reporting KPIs) Tj
+T*
+(- New -> Contact Attempted conversion) Tj
+T*
+(- Contact Attempted -> Engaged conversion) Tj
+T*
+(- Engaged -> Quote Ready conversion) Tj
+T*
+(- Quote Ready -> Proposal Sent conversion) Tj
+T*
+(- Proposal Sent -> Won conversion) Tj
+T*
+(- Cycle time by stage) Tj
+T*
+(- Lost reason distribution) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Pilot Notes) Tj
+T*
+(- Keep statuses strict; avoid ad-hoc custom status proliferation.) Tj
+T*
+(- Weekly audit of records with missing required fields.) Tj
+T*
+(- Enforce compliance suppressions before every outbound action.) Tj
+ET
+endstream
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000136 00000 n 
+0000000206 00000 n 
+0000000332 00000 n 
+0000001698 00000 n 
+0000001824 00000 n 
+0000003243 00000 n 
+0000003369 00000 n 
+0000005079 00000 n 
+0000005207 00000 n 
+trailer
+<< /Size 12 /Root 1 0 R >>
+startxref
+6600
+%%EOF

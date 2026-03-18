@@ -1,0 +1,309 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 4 0 R 6 0 R 8 0 R ] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1848 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(8x8 Cutover Checklist \(Mode A First\)) Tj
+T*
+() Tj
+T*
+(#Objective) Tj
+T*
+(Deploy a dedicated 8x8 number for agent operations with compliance-first controls, inbound) Tj
+T*
+(summarization, and escalation routing.) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Pre-Cutover \(Planning\)) Tj
+T*
+(- [ ] Confirm dedicated 8x8 DID to use for agent ops) Tj
+T*
+(- [ ] Confirm voice + SMS capability on the DID) Tj
+T*
+(- [ ] Confirm business hours and quiet hours) Tj
+T*
+(- [ ] Define escalation recipients \(primary + backup\)) Tj
+T*
+(- [ ] Define severity levels \(urgent, normal, low\)) Tj
+T*
+(- [ ] Confirm compliance policy \(DNC/TCPA/quiet-hours\)) Tj
+T*
+() Tj
+T*
+(#Ownership) Tj
+T*
+(- [ ] Business owner: Todd) Tj
+T*
+(- [ ] Technical owner: Henry agent workflow) Tj
+T*
+(- [ ] Compliance reviewer assigned) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#8x8 Admin Configuration) Tj
+T*
+() Tj
+T*
+(#Number + Routing) Tj
+T*
+(- [ ] Assign DID to automation endpoint/workflow target) Tj
+T*
+(- [ ] Enable inbound voice handling) Tj
+T*
+(- [ ] Enable inbound SMS handling \(if licensed\)) Tj
+T*
+(- [ ] Set fallback destination if workflow unavailable) Tj
+T*
+() Tj
+T*
+(#Call Handling) Tj
+T*
+(- [ ] Create call flow: inbound -> capture -> summarize -> notify) Tj
+T*
+(- [ ] Configure voicemail fallback) Tj
+T*
+(- [ ] Add caller ID preservation in event payloads) Tj
+T*
+(- [ ] Set ring/timeout thresholds for fallback transfer) Tj
+T*
+() Tj
+T*
+(#Messaging Handling) Tj
+T*
+(- [ ] Route inbound SMS to same summarization pipeline) Tj
+T*
+(- [ ] Enforce opt-out detection \(STOP, UNSUBSCRIBE\)) Tj
+T*
+(- [ ] Suppress outbound replies during quiet hours unless urgent) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#OpenClaw / Workflow Configuration) Tj
+T*
+() Tj
+T*
+(#Inbound Processing) Tj
+T*
+(- [ ] Normalize payload fields \(caller, time, transcript/body\)) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1904 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(- [ ] Classify intent \(service, sales, billing, urgent\)) Tj
+T*
+(- [ ] Generate concise summary + next action recommendation) Tj
+T*
+() Tj
+T*
+(#Escalation Rules) Tj
+T*
+(- [ ] Urgent -> immediate Telegram alert to Todd) Tj
+T*
+(- [ ] Normal -> queue in digest + task list) Tj
+T*
+(- [ ] Low -> daily summary only) Tj
+T*
+() Tj
+T*
+(#Logging/Audit) Tj
+T*
+(- [ ] Store event ID, source number, timestamp, classification) Tj
+T*
+(- [ ] Store action taken and destination recipient) Tj
+T*
+(- [ ] Keep audit history for compliance review) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Compliance Guardrails \(Must Pass\)) Tj
+T*
+(- [ ] Quiet hours enforced \(e.g., 9PM–8AM local\)) Tj
+T*
+(- [ ] DNC/TCPA suppression checked before any outbound follow-up) Tj
+T*
+(- [ ] Opt-out immediately suppresses future outbound automation) Tj
+T*
+(- [ ] No autodial/outbound campaign in Mode A) Tj
+T*
+(- [ ] Manual approval required for first outbound workflows) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Testing \(Go/No-Go\)) Tj
+T*
+() Tj
+T*
+(#Test Set A: Inbound Voice) Tj
+T*
+(- [ ] Place test call from known number) Tj
+T*
+(- [ ] Verify event capture + transcript/summary) Tj
+T*
+(- [ ] Verify urgent/non-urgent classification logic) Tj
+T*
+(- [ ] Verify escalation routing and message formatting) Tj
+T*
+() Tj
+T*
+(#Test Set B: Inbound SMS) Tj
+T*
+(- [ ] Send test SMS with normal request) Tj
+T*
+(- [ ] Send test SMS with STOP keyword) Tj
+T*
+(- [ ] Verify suppression behavior and logging) Tj
+T*
+() Tj
+T*
+(#Test Set C: Failure/Fallback) Tj
+T*
+(- [ ] Simulate workflow failure) Tj
+T*
+(- [ ] Verify fallback route triggers correctly) Tj
+T*
+(- [ ] Verify no message loss in failure mode) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Cutover Execution) Tj
+T*
+(- [ ] Freeze config changes 15 min before cutover) Tj
+T*
+(- [ ] Enable production routing on DID) Tj
+T*
+(- [ ] Confirm first live event processed end-to-end) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 1020 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(- [ ] Monitor first hour with live checks every 10 minutes) Tj
+T*
+(- [ ] Record issues + hotfix actions) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Post-Cutover \(First 7 Days\)) Tj
+T*
+(- [ ] Daily review of alerts, misroutes, false urgents) Tj
+T*
+(- [ ] Tune classification prompts and escalation thresholds) Tj
+T*
+(- [ ] Validate compliance suppressions daily) Tj
+T*
+(- [ ] Weekly summary report: volume, routing accuracy, response times) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Mode B Readiness \(Outbound Later\)) Tj
+T*
+(Only proceed after Mode A is stable for 7+ days:) Tj
+T*
+(- [ ] Outbound consent model verified) Tj
+T*
+(- [ ] Approved templates loaded) Tj
+T*
+(- [ ] Quiet-hours and opt-out tested in production) Tj
+T*
+(- [ ] Manual approval gate removed only after compliance sign-off) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#Final Sign-Off) Tj
+T*
+(- [ ] Technical sign-off) Tj
+T*
+(- [ ] Compliance sign-off) Tj
+T*
+(- [ ] Business sign-off) Tj
+T*
+(- [ ] Cutover complete date recorded) Tj
+ET
+endstream
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000129 00000 n 
+0000000199 00000 n 
+0000000325 00000 n 
+0000002225 00000 n 
+0000002351 00000 n 
+0000004307 00000 n 
+0000004433 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+5505
+%%EOF

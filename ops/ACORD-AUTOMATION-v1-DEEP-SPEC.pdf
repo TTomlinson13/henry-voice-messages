@@ -1,0 +1,643 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 4 0 R 6 0 R 8 0 R 10 0 R 12 0 R 14 0 R ] /Count 6 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1763 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(Commercial Intake-to-ACORD Automation \(v1 Deep Spec\)) Tj
+T*
+() Tj
+T*
+(#Objective) Tj
+T*
+(Build a production-ready v1 system that converts commercial client intake into review-ready) Tj
+T*
+(ACORD forms with high data quality, clear exception handling, and full auditability.) Tj
+T*
+() Tj
+T*
+(Initial form scope:) Tj
+T*
+(- ACORD 125 \(Commercial Insurance Application\)) Tj
+T*
+(- ACORD 126 \(Commercial General Liability Section\)) Tj
+T*
+(- ACORD 140 \(Property Section\)) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#1\) Product Scope and Non-Negotiables) Tj
+T*
+() Tj
+T*
+(##In Scope \(v1\)) Tj
+T*
+(- Intake capture \(web form + document upload + optional email ingestion\)) Tj
+T*
+(- Canonical data model for commercial submission data) Tj
+T*
+(- Mapping engine from canonical model to ACORD field set) Tj
+T*
+(- Prefill output package for 125/126/140) Tj
+T*
+(- Human QA/review workflow \(Maria/team approval\)) Tj
+T*
+(- Exception queue for missing/conflicting fields) Tj
+T*
+(- Export package + activity/audit logs) Tj
+T*
+() Tj
+T*
+(##Out of Scope \(v1\)) Tj
+T*
+(- Full carrier appetite recommendation engine) Tj
+T*
+(- Fully autonomous bind workflow) Tj
+T*
+(- E-sign/package automation beyond prefill outputs) Tj
+T*
+() Tj
+T*
+(##Non-Negotiables) Tj
+T*
+(- No form leaves review without human approval) Tj
+T*
+(- Required fields enforced before “Quote Ready”) Tj
+T*
+(- Every transformation is traceable \(audit log\)) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#2\) Required Canonical Data Model) Tj
+T*
+() Tj
+T*
+(#A\) Account-Level \(Insured\)) Tj
+T*
+(- account_id) Tj
+T*
+(- legal_name) Tj
+T*
+(- dba_name) Tj
+T*
+(- fein) Tj
+T*
+(- years_in_business) Tj
+T*
+(- website) Tj
+T*
+(- naics_code) Tj
+T*
+(- operations_description) Tj
+T*
+(- contact_name) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1306 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(- contact_title) Tj
+T*
+(- email) Tj
+T*
+(- mobile) Tj
+T*
+(- mailing_address) Tj
+T*
+() Tj
+T*
+(#B\) Location-Level) Tj
+T*
+(- location_id) Tj
+T*
+(- location_address) Tj
+T*
+(- occupancy_type) Tj
+T*
+(- construction_type) Tj
+T*
+(- year_built) Tj
+T*
+(- square_footage) Tj
+T*
+(- protection_class) Tj
+T*
+(- sprinklered \(yes/no\)) Tj
+T*
+(- burglar_alarm \(yes/no\)) Tj
+T*
+(- fire_alarm \(yes/no\)) Tj
+T*
+() Tj
+T*
+(#C\) Exposure-Level) Tj
+T*
+(- annual_revenue) Tj
+T*
+(- payroll_total) Tj
+T*
+(- employee_count) Tj
+T*
+(- subcontractor_costs) Tj
+T*
+(- gross_sales_split \(if needed\)) Tj
+T*
+(- prior_carrier) Tj
+T*
+(- prior_premium) Tj
+T*
+(- requested_effective_date) Tj
+T*
+() Tj
+T*
+(#D\) Loss/Claims) Tj
+T*
+(- claims_5yr_count) Tj
+T*
+(- claims_5yr_total_paid) Tj
+T*
+(- open_claims_count) Tj
+T*
+(- claim_detail_items[] \(date, cause, paid/incurred\)) Tj
+T*
+() Tj
+T*
+(#E\) Coverage Intent) Tj
+T*
+(- lines_requested \(GL, Property, etc.\)) Tj
+T*
+(- limit_preferences) Tj
+T*
+(- deductible_preferences) Tj
+T*
+(- additional_insured_requirements) Tj
+T*
+(- certificate_requirements) Tj
+T*
+() Tj
+T*
+(#F\) Producer/Workflow Meta) Tj
+T*
+(- lead_source) Tj
+T*
+(- owner_user) Tj
+T*
+(- intake_completed_at) Tj
+T*
+(- confidence_score) Tj
+T*
+(- missing_fields[]) Tj
+T*
+(- exception_flags[]) Tj
+T*
+() Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 2124 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(---) Tj
+T*
+() Tj
+T*
+(#3\) Form Mapping Tables \(v1\)) Tj
+T*
+() Tj
+T*
+(#ACORD 125 Core Mapping \(examples\)) Tj
+T*
+(- Canonical `legal_name` -> ACORD 125 Applicant Name) Tj
+T*
+(- `mailing_address` -> Mailing Address block) Tj
+T*
+(- `naics_code` + `operations_description` -> Business Description / Classification) Tj
+T*
+(- `years_in_business` -> Yrs in Business) Tj
+T*
+(- `requested_effective_date` -> Proposed Effective Date) Tj
+T*
+(- `prior_carrier` / `prior_premium` -> Prior Coverage section) Tj
+T*
+() Tj
+T*
+(#ACORD 126 Core Mapping \(examples\)) Tj
+T*
+(- `lines_requested` includes GL -> enable 126 section) Tj
+T*
+(- `annual_revenue`, `payroll_total`, `employee_count` -> exposure basis fields) Tj
+T*
+(- `claims_5yr_*` + claim_detail_items -> Loss History fields) Tj
+T*
+(- `subcontractor_costs` -> subcontractor exposure fields) Tj
+T*
+(- `additional_insured_requirements` -> AI/COI section inputs) Tj
+T*
+() Tj
+T*
+(#ACORD 140 Core Mapping \(examples\)) Tj
+T*
+(- `location_*` -> Location schedule blocks) Tj
+T*
+(- `construction_type`, `occupancy_type`, `year_built`, `square_footage` -> property details) Tj
+T*
+(- `sprinklered`, `fire_alarm`, `burglar_alarm` -> protection details) Tj
+T*
+(- deductible/limit preferences -> requested terms) Tj
+T*
+() Tj
+T*
+(Note: Maintain mapping table as versioned config \(YAML/JSON\), not hardcoded logic.) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#4\) Intake Requirements \(Quote-Ready Gate\)) Tj
+T*
+() Tj
+T*
+(Minimum required for Quote Ready:) Tj
+T*
+(1\) Legal insured name) Tj
+T*
+(2\) Primary contact + email/phone) Tj
+T*
+(3\) Operations description + NAICS \(or class code proxy\)) Tj
+T*
+(4\) Revenue + payroll) Tj
+T*
+(5\) At least one location with address and occupancy/construction basics) Tj
+T*
+(6\) Requested effective date) Tj
+T*
+(7\) Prior carrier/premium \(or explicit unknown flag\)) Tj
+T*
+(8\) Basic 5-year loss summary \(or no-loss attestation\)) Tj
+T*
+() Tj
+T*
+(Gate rule:) Tj
+T*
+(- If any required field missing -> status remains Engaged, create exception task.) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#5\) QA and Confidence Rules) Tj
+T*
+() Tj
+ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 11 0 R >>
+endobj
+11 0 obj
+<< /Length 1577 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(#Confidence Scoring) Tj
+T*
+(- Start score at 1.0) Tj
+T*
+(- Deduct for each missing required field) Tj
+T*
+(- Deduct for contradictory values \(e.g., payroll present, employee count = 0\)) Tj
+T*
+(- Deduct for low-quality document extraction) Tj
+T*
+() Tj
+T*
+(Bands:) Tj
+T*
+(- High: >=0.90 \(fast review\)) Tj
+T*
+(- Medium: 0.75–0.89 \(standard review\)) Tj
+T*
+(- Low: <0.75 \(manual rebuild required\)) Tj
+T*
+() Tj
+T*
+(#Validation Rules \(examples\)) Tj
+T*
+(- FEIN format check) Tj
+T*
+(- Effective date not in past unless renewal flow) Tj
+T*
+(- Revenue/payroll non-negative and reasonable ranges) Tj
+T*
+(- Location addresses valid format) Tj
+T*
+(- Claims totals align with claim items) Tj
+T*
+() Tj
+T*
+(#Review Checklist) Tj
+T*
+(- Field completeness) Tj
+T*
+(- Exposure consistency) Tj
+T*
+(- Coverage intent captured) Tj
+T*
+(- Loss narrative adequacy) Tj
+T*
+(- Producer notes added) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#6\) Exception Queue Design) Tj
+T*
+() Tj
+T*
+(Exception categories:) Tj
+T*
+(- Missing required data) Tj
+T*
+(- Conflicting values) Tj
+T*
+(- Mapping ambiguity) Tj
+T*
+(- Unsupported document format) Tj
+T*
+(- Carrier-specific requirement missing) Tj
+T*
+() Tj
+T*
+(Routing:) Tj
+T*
+(- CSR/Intake owner -> data completion) Tj
+T*
+(- Maria -> commercial underwriting quality review) Tj
+T*
+(- Producer -> final coverage strategy decisions) Tj
+T*
+() Tj
+T*
+(SLA:) Tj
+T*
+(- High-severity missing data: same business day) Tj
+T*
+(- Standard exceptions: within 24 hours) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#7\) Workflow States and Triggers) Tj
+ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 13 0 R >>
+endobj
+13 0 obj
+<< /Length 1655 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+() Tj
+T*
+(Lifecycle alignment:) Tj
+T*
+(- New -> Contact Attempted -> Engaged -> Quote Ready -> Proposal Sent -> Won/Lost) Tj
+T*
+() Tj
+T*
+(Automation triggers \(v1\):) Tj
+T*
+(1\) Intake completed event -> run validation + mapping) Tj
+T*
+(2\) If Quote Ready -> create ACORD package + assign review task) Tj
+T*
+(3\) If exceptions -> create task + send missing-data request template) Tj
+T*
+(4\) Review approved -> export package + notify producer queue) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#8\) Output Package Specification) Tj
+T*
+() Tj
+T*
+(For each submission, generate:) Tj
+T*
+(- Prefilled ACORD 125 PDF \(or structured payload\)) Tj
+T*
+(- Prefilled ACORD 126 PDF) Tj
+T*
+(- Prefilled ACORD 140 PDF) Tj
+T*
+(- Missing/assumption report) Tj
+T*
+(- Submission summary sheet \(key exposures + notes\)) Tj
+T*
+() Tj
+T*
+(Naming convention:) Tj
+T*
+(`{AccountName}-{YYYYMMDD}-ACORD-PACK-v{N}`) Tj
+T*
+() Tj
+T*
+(Storage:) Tj
+T*
+(- Canonical folder by account/year in Drive/CD document storage) Tj
+T*
+(- Immutable copy of original source docs) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#9\) Security, Compliance, and Audit) Tj
+T*
+() Tj
+T*
+(- Role-based access \(intake vs reviewer vs producer\)) Tj
+T*
+(- PII minimization in notifications) Tj
+T*
+(- Audit log entries for:) Tj
+T*
+(  - source ingest) Tj
+T*
+(  - field transforms) Tj
+T*
+(  - manual edits) Tj
+T*
+(  - approvals/exports) Tj
+T*
+(- Retention policy for source and generated artifacts) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#10\) Implementation Plan \(Manus + Team\)) Tj
+T*
+() Tj
+T*
+(#Phase 1 \(Week 1-2\)) Tj
+T*
+(- Finalize canonical schema) Tj
+T*
+(- Build 125 mapping + validator) Tj
+ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 15 0 R >>
+endobj
+15 0 obj
+<< /Length 1124 >>
+stream
+BT
+/F1 10 Tf
+13 TL
+50 770 Td
+(- Stand up exception queue) Tj
+T*
+(- Pilot with 10 real submissions) Tj
+T*
+() Tj
+T*
+(#Phase 2 \(Week 3-4\)) Tj
+T*
+(- Add 126 + 140 mappings) Tj
+T*
+(- Improve extraction quality/rules) Tj
+T*
+(- Add review dashboard + confidence sorting) Tj
+T*
+() Tj
+T*
+(#Phase 3 \(Week 5-6\)) Tj
+T*
+(- Tighten workflow automation in CD/QuoteRUSH) Tj
+T*
+(- Add carrier-specific requirement templates) Tj
+T*
+(- Expand pilot volume and measure KPIs) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#11\) KPI Targets \(First 60 Days\)) Tj
+T*
+(- >=85% submissions reach review-ready in first pass) Tj
+T*
+(- <=24h median exception resolution time) Tj
+T*
+(- >=50% reduction in manual rekey time) Tj
+T*
+(- >=90% reviewer satisfaction on data completeness) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(#12\) Immediate Next Actions) Tj
+T*
+(1\) Confirm field dictionary with Maria for commercial quoting reality) Tj
+T*
+(2\) Lock required vs optional fields list for Quote Ready gate) Tj
+T*
+(3\) Build mapping config v0.1 \(125 first\)) Tj
+T*
+(4\) Run first 10-file pilot and tune exceptions) Tj
+T*
+(5\) Publish weekly quality scorecard) Tj
+ET
+endstream
+endobj
+xref
+0 16
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000150 00000 n 
+0000000220 00000 n 
+0000000346 00000 n 
+0000002161 00000 n 
+0000002287 00000 n 
+0000003645 00000 n 
+0000003771 00000 n 
+0000005947 00000 n 
+0000006075 00000 n 
+0000007705 00000 n 
+0000007833 00000 n 
+0000009541 00000 n 
+0000009669 00000 n 
+trailer
+<< /Size 16 /Root 1 0 R >>
+startxref
+10846
+%%EOF

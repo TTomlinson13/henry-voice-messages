@@ -1,0 +1,42 @@
+Hi Maria,
+
+Here is the ACORD 125 Pilot Run #1 step-by-step checklist.
+
+Step 1) Field Dictionary Lock (10-15 min)
+- Review required fields list.
+- Mark each field: Required / Optional / Nice-to-have.
+Output: final required field list for v1.
+
+Step 2) Quote-Ready Gate Rules (10 min)
+- Define what must be true for Quote-Ready.
+- Confirm hard-stop blockers.
+Output: pass/fail gate checklist.
+
+Step 3) Review 10 Pilot Records (20-30 min)
+For each record:
+- Check required-field completeness.
+- Check underwriting consistency.
+- Mark Approve / Revise / Reject.
+- Add note on missing/incorrect data.
+Output: review status + notes for all 10.
+
+Step 4) Exception Coding (10 min)
+Tag failures with:
+- MISSING_REQUIRED
+- INVALID_FORMAT
+- CONFLICTING_VALUES
+- DUPLICATE_RECORD
+- OUT_OF_SCOPE
+Output: ranked exception list by frequency.
+
+Step 5) Correction Guidance (10-15 min)
+Define fix rules for top exception patterns.
+Output: v0.2 correction rules.
+
+Step 6) Sign-Off for Run #2 (5 min)
+- Approve updated rules for next run.
+- Confirm review SLA.
+Output: approved for Run #2 (+ conditions if any).
+
+Thanks,
+Todd + Henry

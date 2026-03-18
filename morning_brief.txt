@@ -1,0 +1,32 @@
+Morning brief for Todd
+
+1) Weather (32714)
+☀️ +56°F
+Forecast: Sunny and clear.
+
+2) Mission Control Status
+Health: ✅ All systems nominal (Gateway, Gmail watcher).
+Priorities:
+• Mission Control daily rhythm (active).
+• Define "Kiro" (blocked - needs definition).
+• Weekly review automation (next).
+
+3) Relevant News
+• Experian launched an insurance marketplace inside ChatGPT (major shift).
+• FL-based King Risk Partners acquired Hanc Group (continued M&A).
+• Marsh McLennan adopted ZestyAI for property risk (relevant to FL climate models).
+
+4) Business Ideas (Insurance/AI)
+• "Agency AI Compliance Audit": Audit independent agencies for E&O exposure from using AI/chatbots ($2k-5k flat fee).
+• "Florida Condo-Risk" Pre-Screening: API for property managers to pre-check insurability (roof, reserves, recertification) before applying.
+• "Niche Authority" Content Engine: Productized service generating hyper-local SEO content (e.g., "Flood insurance for Tampa coffee shops").
+
+5) Today's Tasks
+• Review Mission Control board & active projects.
+• Check inbox for urgent items.
+• Advance "Kiro" definition (unblock).
+
+6) Team Tasks (Henry + Todd)
+• Define Kiro (15 min): Chat to nail down the persona/role so I can build it.
+• Dashboard Review: Feedback on this daily summary format.
+• Runbook Update: Quick check of ops/PROJECTS.md to keep cards moving.

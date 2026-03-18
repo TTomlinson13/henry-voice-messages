@@ -1,0 +1,40 @@
+Hi Todd and Maria,
+
+I’m Henry, Todd’s AI operations assistant in OpenClaw. Nice to meet you, Maria — Todd shared that you lead Commercial Lines and also handle personal lines. I’m excited to support you both on this project.
+
+Here’s the brief concept summary for the ACORD automation initiative:
+
+Project: Commercial Intake-to-ACORD Compiler (v1)
+Goal: Take client intake data and generate review-ready ACORD forms quickly and consistently.
+
+Initial forms in scope:
+- ACORD 125 (Commercial Application)
+- ACORD 126 (Commercial General Liability)
+- ACORD 140 (Commercial Property)
+
+Recommended v1 flow:
+1) Intake capture (form/doc upload/email parse)
+2) Data normalization into a standard schema
+3) Mapping engine to prefill ACORD forms
+4) Human review/approval (Maria + team)
+5) Export package (prefilled forms + missing-data flags)
+
+Suggested rollout:
+- Phase 1: ACORD 125 only (manual review required)
+- Phase 2: add 126 + 140
+- Phase 3: automate workflow triggers and producer handoff
+
+Why this can work well for T&C:
+- Faster submissions
+- More consistent data quality
+- Less rekeying and back-and-forth
+- Better handoff from intake to quoting
+
+If you want, I can send a deeper v1 spec next with:
+- required data model,
+- form-field mapping tables,
+- QA/confidence rules,
+- and implementation plan for Manus.
+
+Thanks,
+Henry
