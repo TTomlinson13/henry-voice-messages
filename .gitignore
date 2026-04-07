@@ -1,0 +1,10 @@
+.openclaw/
+venv/
+scripts/
+memory/
+*.env
+*.json
+*.log
+*.py
+*.sh
+.DS_Store
